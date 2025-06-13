@@ -1,0 +1,6 @@
+@tvo.APIWeb_HostAddress = http://localhost:5012
+
+GET {{tvo.APIWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
