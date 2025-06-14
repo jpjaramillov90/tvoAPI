@@ -1,4 +1,5 @@
 Prototype of a Digital Entry Order and Budget Management System.
+
 This project seeks to develop and implement a prototype for the efficient management of entry orders to the Carrocerías Oleas workshop. The system will allow recording in detail the relevant information of each entry, including the data of the person responsible for the delivery of the bus, the cooperative to which it belongs, the precise description of the damage identified and the preparation of a detailed budget.
 
 To create the basis of the project use the following script
