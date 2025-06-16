@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,6 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tvo.Aplicacion.DTO\tvo.Aplicacion.DTO.csproj" />
+    <ProjectReference Include="..\tvo.Aplicacion\tvo.Aplicacion.csproj" />
+    <ProjectReference Include="..\tvo.Dominio.Modelo\tvo.Dominio.Modelo.csproj" />
+    <ProjectReference Include="..\tvo.Dominio.Servicio\tvo.Dominio.Servicio.csproj" />
   </ItemGroup>
 
 </Project>

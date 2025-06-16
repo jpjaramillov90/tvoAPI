@@ -4,6 +4,136 @@
     "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Infraestructura.CrossCuting\\tvo.Infraestructura.CrossCuting.csproj": {}
   },
   "projects": {
+    "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj",
+        "projectName": "tvo.Dominio.Modelo",
+        "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj",
+        "packagesPath": "C:\\Users\\joaojv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaojv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj",
+        "projectName": "tvo.Dominio.Servicio",
+        "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj",
+        "packagesPath": "C:\\Users\\joaojv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joaojv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Infraestructura.CrossCuting\\tvo.Infraestructura.CrossCuting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +161,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj": {
+                "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj"
+              },
+              "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj": {
+                "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

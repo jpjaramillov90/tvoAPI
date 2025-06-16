@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "tvo.Dominio.Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/tvo.Dominio.Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/tvo.Dominio.Modelo.dll": {}
+        }
+      },
+      "tvo.Dominio.Servicio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/tvo.Dominio.Servicio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/tvo.Dominio.Servicio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "tvo.Dominio.Modelo/1.0.0": {
+      "type": "project",
+      "path": "../tvo.Dominio.Modelo/tvo.Dominio.Modelo.csproj",
+      "msbuildProject": "../tvo.Dominio.Modelo/tvo.Dominio.Modelo.csproj"
+    },
+    "tvo.Dominio.Servicio/1.0.0": {
+      "type": "project",
+      "path": "../tvo.Dominio.Servicio/tvo.Dominio.Servicio.csproj",
+      "msbuildProject": "../tvo.Dominio.Servicio/tvo.Dominio.Servicio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "tvo.Dominio.Modelo >= 1.0.0",
+      "tvo.Dominio.Servicio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\joaojv\\.nuget\\packages\\": {},
@@ -38,7 +73,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj": {
+              "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\tvo.Dominio.Modelo.csproj"
+            },
+            "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj": {
+              "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Servicio\\tvo.Dominio.Servicio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

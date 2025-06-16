@@ -1,0 +1,117 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "db_tvoContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Dominio.Modelo\\Entidades",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "tvo.Infraestructura.AccesoDatos",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[brands]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[budget]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[budgetStatement]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[client]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[clientStatus]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[cooperative]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[employee]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[models]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[orderDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[orderStatus]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[rolEmployee]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[servicePrice]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[servicePriceHistory]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[services]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[specialties]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[transport]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[transportData]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[workOrder]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false
+}
