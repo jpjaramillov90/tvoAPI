@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tvo.Infraestructura.ServiciosExternos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f57df2978c6e8254155fcc853dc4a3e9c442411")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f9e17a35970f9f5a34c0b9a81d9a24efadf813")]
 [assembly: System.Reflection.AssemblyProductAttribute("tvo.Infraestructura.ServiciosExternos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tvo.Infraestructura.ServiciosExternos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
