@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using tvo.Infraestructura.AccesoDatos;
 
 namespace tvo.Dominio.Modelo.Abstracciones
 {
-    public interface IOrderDetailsRepository
+    public interface IOrderDetailsRepository : IRepository<orderDetails>
     {
     }
 }

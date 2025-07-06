@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30 d17.14
+VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.InterfazUsuario", "1.InterfazUsuario", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tvo.Infraestructura.ServiciosEmail", "tvo.Infraestructura.ServiciosEmail\tvo.Infraestructura.ServiciosEmail.csproj", "{4367F593-8DAA-487C-8976-1EC01936FD81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tvo.Infraestructura.ServiciosExternos", "tvo.Infraestructura.ServiciosExternos\tvo.Infraestructura.ServiciosExternos.csproj", "{ED9940CC-40A4-42EB-844D-9477CBF0A1DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Test", "5.Test", "{F3C6F964-F096-46A2-AB0F-DDB97C29D102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

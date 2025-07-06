@@ -15,4 +15,9 @@
     <ProjectReference Include="..\tvo.Infraestructura.ServiciosExternos\tvo.Infraestructura.ServiciosExternos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="172.76.0" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.1.2" />
+  </ItemGroup>
+
 </Project>

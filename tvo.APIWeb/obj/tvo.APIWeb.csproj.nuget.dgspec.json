@@ -220,6 +220,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.SqlServer.SqlManagementObjects": {
+              "target": "Package",
+              "version": "[172.76.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
