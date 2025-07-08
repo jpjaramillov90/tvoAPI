@@ -1385,9 +1385,22 @@
           }
         }
       },
+      "tvo.Aplicacion.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/tvo.Aplicacion.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/tvo.Aplicacion.DTO.dll": {}
+        }
+      },
       "tvo.Dominio.Modelo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "tvo.Aplicacion.DTO": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/tvo.Dominio.Modelo.dll": {}
         },
@@ -3689,6 +3702,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "tvo.Aplicacion.DTO/1.0.0": {
+      "type": "project",
+      "path": "../tvo.Aplicacion.DTO/tvo.Aplicacion.DTO.csproj",
+      "msbuildProject": "../tvo.Aplicacion.DTO/tvo.Aplicacion.DTO.csproj"
     },
     "tvo.Dominio.Modelo/1.0.0": {
       "type": "project",

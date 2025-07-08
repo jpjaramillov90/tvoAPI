@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using tvo.Aplicacion.DTO.DTOs;
 using tvo.Aplicacion.Service;
 using tvo.Dominio.Modelo.Abstracciones;
 using tvo.Infraestructura.AccesoDatos;
@@ -39,6 +40,16 @@ namespace tvo.Aplicacion.ServiceImpl
         public Task<client> GetByIdAsync(int id)
         {
             return _clientRepository.GetByIdAsync(id);
+        }
+
+        public async Task<List<ClientAndStatusDTO>> ListClientAndStatus()
+        {
+            return await _clientRepository.ListClientAndStatus();
+        }
+
+        public Task<List<client>> SearchClient(string firstName)
+        {
+            return _clientRepository.SearchClient(firstName);
         }
 
         public async Task UpdateAsync(client entity)

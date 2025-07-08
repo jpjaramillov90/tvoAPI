@@ -1,0 +1,11 @@
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\bin\Debug\net8.0\tvo.Dominio.Servicio.deps.json
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\bin\Debug\net8.0\tvo.Dominio.Servicio.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\bin\Debug\net8.0\tvo.Dominio.Servicio.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.AssemblyInfoInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.AssemblyInfo.cs
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.csproj.CoreCompileInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\refint\tvo.Dominio.Servicio.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\tvo.Dominio.Servicio.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Servicio\obj\Debug\net8.0\ref\tvo.Dominio.Servicio.dll

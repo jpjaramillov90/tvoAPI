@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using tvo.Aplicacion.DTO.DTOs;
 using tvo.Aplicacion.Service;
 using tvo.Dominio.Modelo.Abstracciones;
 using tvo.Infraestructura.AccesoDatos;
@@ -39,6 +40,16 @@ namespace tvo.Aplicacion.ServiceImpl
         public Task<workOrder> GetByIdAsync(int id)
         {
             return _workOrderRepository.GetByIdAsync(id);
+        }
+
+        public async Task<List<PendingWorkOrderDTO>> GetPendingWorkOrders()
+        {
+            return await _workOrderRepository.GetPendingWorkOrders();
+        }
+
+        public async Task<List<EmployeeWorkOrdersDTO>> GetWorkOrdersByEmployeeId(int employeeId)
+        {
+            return await _workOrderRepository.GetWorkOrdersByEmployeeId(employeeId);
         }
 
         public async Task UpdateAsync(workOrder entity)

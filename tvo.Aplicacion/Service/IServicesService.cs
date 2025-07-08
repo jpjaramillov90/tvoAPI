@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using tvo.Aplicacion.DTO.DTOs;
 using tvo.Infraestructura.AccesoDatos;
 
 namespace tvo.Aplicacion.Service
@@ -21,5 +22,7 @@ namespace tvo.Aplicacion.Service
         Task<IEnumerable<services>> GetAllAsync();
         [OperationContract]
         Task<services> GetByIdAsync(int id);
+        [OperationContract]
+        Task<List<ServicePriceDTO>> GetServicesByMinPrice(decimal minPrice);
     }
 }

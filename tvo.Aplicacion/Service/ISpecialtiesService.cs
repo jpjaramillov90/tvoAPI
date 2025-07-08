@@ -21,5 +21,7 @@ namespace tvo.Aplicacion.Service
         Task<IEnumerable<specialties>> GetAllAsync();
         [OperationContract]
         Task<specialties> GetByIdAsync(int id);
+        [OperationContract]
+        Task<List<specialties>> ListSpecialties();
     }
 }

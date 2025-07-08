@@ -26,6 +26,11 @@ namespace tvo.Aplicacion.ServiceImpl
             await _cooperativeRepository.AddAsync(entity);
         }
 
+        public Task<int> CountCooperativesByName(string nameCooperative)
+        {
+            return _cooperativeRepository.CountCooperativesByName(nameCooperative);
+        }
+
         public async Task DeleteAsync(int id)
         {
             await _cooperativeRepository.DeleteAsync(id);

@@ -1505,6 +1505,9 @@
       "tvo.Dominio.Modelo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "tvo.Aplicacion.DTO": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/tvo.Dominio.Modelo.dll": {}
         },

@@ -277,7 +277,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Aplicacion.DTO\\tvo.Aplicacion.DTO.csproj": {
+                "projectPath": "C:\\Users\\joaojv\\Documents\\Projects\\tvoAPI\\tvo.Aplicacion.DTO\\tvo.Aplicacion.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

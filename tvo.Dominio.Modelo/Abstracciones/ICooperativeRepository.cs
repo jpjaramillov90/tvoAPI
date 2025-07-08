@@ -9,5 +9,6 @@ namespace tvo.Dominio.Modelo.Abstracciones
 {
     public interface ICooperativeRepository : IRepository<cooperative>
     {
+        Task<int> CountCooperativesByName(string nameCooperative);
     }
 }

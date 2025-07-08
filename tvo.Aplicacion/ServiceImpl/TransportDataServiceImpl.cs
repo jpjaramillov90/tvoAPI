@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using tvo.Aplicacion.DTO.DTOs;
 using tvo.Aplicacion.Service;
 using tvo.Dominio.Modelo.Abstracciones;
 using tvo.Infraestructura.AccesoDatos;
@@ -39,6 +40,11 @@ namespace tvo.Aplicacion.ServiceImpl
         public Task<transportData> GetByIdAsync(int id)
         {
             return _transportDataRepository.GetByIdAsync(id);
+        }
+
+        public async Task<List<TransportDataDTO>> GetTransportDataWithClients()
+        {
+            return await _transportDataRepository.GetTransportDataWithClients();
         }
 
         public async Task UpdateAsync(transportData entity)

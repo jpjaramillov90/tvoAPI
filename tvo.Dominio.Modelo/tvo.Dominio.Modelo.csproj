@@ -11,4 +11,8 @@
     <Folder Include="ObjetoValor\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\tvo.Aplicacion.DTO\tvo.Aplicacion.DTO.csproj" />
+  </ItemGroup>
+
 </Project>

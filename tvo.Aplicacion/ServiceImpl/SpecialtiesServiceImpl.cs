@@ -41,6 +41,11 @@ namespace tvo.Aplicacion.ServiceImpl
             return _specialtiesRepository.GetByIdAsync(id);
         }
 
+        public Task<List<specialties>> ListSpecialties()
+        {
+            return _specialtiesRepository.ListSpecialties();
+        }
+
         public async Task UpdateAsync(specialties entity)
         {
             await _specialtiesRepository.UpdateAsync(entity);

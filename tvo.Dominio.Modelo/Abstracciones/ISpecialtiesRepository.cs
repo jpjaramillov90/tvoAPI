@@ -9,5 +9,6 @@ namespace tvo.Dominio.Modelo.Abstracciones
 {
     public interface ISpecialtiesRepository : IRepository<specialties>
     {
+        Task<List<specialties>> ListSpecialties();
     }
 }

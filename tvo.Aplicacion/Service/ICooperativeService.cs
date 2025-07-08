@@ -21,5 +21,7 @@ namespace tvo.Aplicacion.Service
         Task<IEnumerable<cooperative>> GetAllAsync();
         [OperationContract]
         Task<cooperative> GetByIdAsync(int id);
+        [OperationContract]
+        Task<int> CountCooperativesByName(string nameCooperative);
     }
 }

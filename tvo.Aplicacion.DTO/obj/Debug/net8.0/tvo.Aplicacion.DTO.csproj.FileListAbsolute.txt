@@ -1,0 +1,11 @@
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\bin\Debug\net8.0\tvo.Aplicacion.DTO.deps.json
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.AssemblyInfoInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.AssemblyInfo.cs
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.csproj.CoreCompileInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\refint\tvo.Aplicacion.DTO.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\tvo.Aplicacion.DTO.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion.DTO\obj\Debug\net8.0\ref\tvo.Aplicacion.DTO.dll

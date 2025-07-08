@@ -1,0 +1,15 @@
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\bin\Debug\net8.0\tvo.Dominio.Modelo.deps.json
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\bin\Debug\net8.0\tvo.Dominio.Modelo.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\bin\Debug\net8.0\tvo.Dominio.Modelo.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.AssemblyInfoInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.AssemblyInfo.cs
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.csproj.CoreCompileInputs.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\refint\tvo.Dominio.Modelo.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\ref\tvo.Dominio.Modelo.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Dominio.Modelo.csproj.AssemblyReference.cache
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Dominio.Modelo\obj\Debug\net8.0\tvo.Domi.EF6FAF0F.Up2Date
