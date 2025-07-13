@@ -1,0 +1,2347 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "tvo.APIWeb",
+    "version": "1.0"
+  },
+  "paths": {
+    "/tvo/api/Brands/ListBrands": {
+      "get": {
+        "tags": [
+          "Brands"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/brands"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/brands"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/brands"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Brands/InsertBrand": {
+      "post": {
+        "tags": [
+          "Brands"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Budget/ListBudget": {
+      "get": {
+        "tags": [
+          "Budget"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budget"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budget"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budget"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Budget/InsertBudget": {
+      "post": {
+        "tags": [
+          "Budget"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/BudgetStatement/ListBudgetStatements": {
+      "get": {
+        "tags": [
+          "BudgetStatement"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budgetStatement"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budgetStatement"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/budgetStatement"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/BudgetStatement/InsertBudgetStatement": {
+      "post": {
+        "tags": [
+          "BudgetStatement"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Client/ListClients": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Client/ListWithFirstName/{firstName}": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "parameters": [
+          {
+            "name": "firstName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/client"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Client/ListClientAndStatus": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientAndStatusDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientAndStatusDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientAndStatusDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Client/InsertClient": {
+      "post": {
+        "tags": [
+          "Client"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Client/UpdateClient": {
+      "put": {
+        "tags": [
+          "Client"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/client"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/ClientStatus/ListClientStatus": {
+      "get": {
+        "tags": [
+          "ClientStatus"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/clientStatus"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/clientStatus"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/clientStatus"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/ClientStatus/InsertClientStatus": {
+      "post": {
+        "tags": [
+          "ClientStatus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Cooperative/ListCooperatives": {
+      "get": {
+        "tags": [
+          "Cooperative"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cooperative"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cooperative"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/cooperative"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Cooperative/InsertCoorperative": {
+      "post": {
+        "tags": [
+          "Cooperative"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Employee/ListEmployee": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/employee"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/employee"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/employee"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Employee/InsertEmployee": {
+      "post": {
+        "tags": [
+          "Employee"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/employee"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/employee"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/employee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Models/ListModels": {
+      "get": {
+        "tags": [
+          "Models"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/models"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/models"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/models"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Models/InsertModels": {
+      "post": {
+        "tags": [
+          "Models"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderDetails/ListOrderDetails": {
+      "get": {
+        "tags": [
+          "OrderDetails"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderDetails"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderDetails"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderDetails/InsertOrderDetail": {
+      "post": {
+        "tags": [
+          "OrderDetails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderStatus/ListOrderStatus": {
+      "get": {
+        "tags": [
+          "OrderStatus"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderStatus"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderStatus"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/orderStatus"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderStatus/InsertOrderStatus": {
+      "post": {
+        "tags": [
+          "OrderStatus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/RolEmployee/ListRolEmployee": {
+      "get": {
+        "tags": [
+          "RolEmployee"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/rolEmployee"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/rolEmployee"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/rolEmployee"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/RolEmployee/InsertRolEmployee": {
+      "post": {
+        "tags": [
+          "RolEmployee"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/ServicePrice/ListServicePrice": {
+      "get": {
+        "tags": [
+          "ServicePrice"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/servicePrice"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/servicePrice"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/servicePrice"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/ServicePrice/InsertServicePrice": {
+      "post": {
+        "tags": [
+          "ServicePrice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Services/GetServicesByMinPrice/{minPrice}": {
+      "get": {
+        "tags": [
+          "Services"
+        ],
+        "parameters": [
+          {
+            "name": "minPrice",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ServicePriceDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ServicePriceDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ServicePriceDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Services/ListServices": {
+      "get": {
+        "tags": [
+          "Services"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/services"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/services"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/services"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Services/InsertService": {
+      "post": {
+        "tags": [
+          "Services"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Specialties/ListSpecialitiesByName/{specialitie}": {
+      "get": {
+        "tags": [
+          "Specialties"
+        ],
+        "parameters": [
+          {
+            "name": "specialitie",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Specialties/ListSpecialities": {
+      "get": {
+        "tags": [
+          "Specialties"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/specialties"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Specialties/InsertSpecialitie": {
+      "post": {
+        "tags": [
+          "Specialties"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Transport/ListTransport": {
+      "get": {
+        "tags": [
+          "Transport"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transport"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transport"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transport"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/Transport/InsertTransport": {
+      "post": {
+        "tags": [
+          "Transport"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/TransportData/ListTransportData": {
+      "get": {
+        "tags": [
+          "TransportData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transportData"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transportData"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/transportData"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/TransportData/GetTransportDataWithClients": {
+      "get": {
+        "tags": [
+          "TransportData"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TransportDataDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TransportDataDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TransportDataDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/TransportData/InsertTransportData": {
+      "post": {
+        "tags": [
+          "TransportData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/ListWorkOrders": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/workOrder"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/workOrder"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/workOrder"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/GetWorkOrderById/{id}": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/workOrder"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/workOrder"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/workOrder"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/GetWorkOrdersByEmployeeId/{employeeId}": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeWorkOrdersDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeWorkOrdersDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeWorkOrdersDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/GetPendingWorkOrders": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PendingWorkOrderDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PendingWorkOrderDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PendingWorkOrderDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/InsertWorkOrder": {
+      "post": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/UpdateWorkOrder": {
+      "put": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateWorkOrderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateWorkOrderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateWorkOrderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/DeleteAsync/{id}": {
+      "delete": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClientAndStatusDTO": {
+        "type": "object",
+        "properties": {
+          "nui": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstname": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeWorkOrdersDTO": {
+        "type": "object",
+        "properties": {
+          "employeeFirstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeeLastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "workOrderDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PendingWorkOrderDTO": {
+        "type": "object",
+        "properties": {
+          "employeeFirstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeeLastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "workOrderDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ServicePriceDTO": {
+        "type": "object",
+        "properties": {
+          "serviceDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransportDataDTO": {
+        "type": "object",
+        "properties": {
+          "nui": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "typeTransport": {
+            "type": "string",
+            "nullable": true
+          },
+          "plate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateWorkOrderDTO": {
+        "type": "object",
+        "properties": {
+          "idWorkOrder": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEmployee": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idOrderStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "descriptionWO": {
+            "type": "string",
+            "nullable": true
+          },
+          "expires": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      },
+      "brands": {
+        "type": "object",
+        "properties": {
+          "idBrands": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "brand": {
+            "type": "string",
+            "nullable": true
+          },
+          "budget": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/budget"
+            },
+            "nullable": true
+          },
+          "models": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/models"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "budget": {
+        "type": "object",
+        "properties": {
+          "idBudget": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idWorkOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTransportData": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idBudgetStatement": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idBrands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "issueDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "validUntil": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "comments": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBrandsNavigation": {
+            "$ref": "#/components/schemas/brands"
+          },
+          "idBudgetStatementNavigation": {
+            "$ref": "#/components/schemas/budgetStatement"
+          },
+          "idTransportDataNavigation": {
+            "$ref": "#/components/schemas/transportData"
+          },
+          "idWorkOrderNavigation": {
+            "$ref": "#/components/schemas/workOrder"
+          }
+        },
+        "additionalProperties": false
+      },
+      "budgetStatement": {
+        "type": "object",
+        "properties": {
+          "idBudgetStatement": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descriptionStatement": {
+            "type": "string",
+            "nullable": true
+          },
+          "budget": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/budget"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "client": {
+        "type": "object",
+        "properties": {
+          "idClient": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nui": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "addressClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordClient": {
+            "type": "string",
+            "nullable": true
+          },
+          "idClientStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idClientStatusNavigation": {
+            "$ref": "#/components/schemas/clientStatus"
+          },
+          "transportData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/transportData"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "clientStatus": {
+        "type": "object",
+        "properties": {
+          "idClientStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clientStatus1": {
+            "type": "string",
+            "nullable": true
+          },
+          "client": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/client"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "cooperative": {
+        "type": "object",
+        "properties": {
+          "idCooperative": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nameCooperative": {
+            "type": "string",
+            "nullable": true
+          },
+          "transportData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/transportData"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "employee": {
+        "type": "object",
+        "properties": {
+          "idEmployee": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSpecialties": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idRolEmployee": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nui": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "addressEmp": {
+            "type": "string",
+            "nullable": true
+          },
+          "mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "idRolEmployeeNavigation": {
+            "$ref": "#/components/schemas/rolEmployee"
+          },
+          "idSpecialtiesNavigation": {
+            "$ref": "#/components/schemas/specialties"
+          },
+          "workOrder": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/workOrder"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "models": {
+        "type": "object",
+        "properties": {
+          "idModels": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idBrands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "models1": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBrandsNavigation": {
+            "$ref": "#/components/schemas/brands"
+          }
+        },
+        "additionalProperties": false
+      },
+      "orderDetails": {
+        "type": "object",
+        "properties": {
+          "idOrderDetails": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idWorkOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idService": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idServiceNavigation": {
+            "$ref": "#/components/schemas/services"
+          },
+          "idWorkOrderNavigation": {
+            "$ref": "#/components/schemas/workOrder"
+          }
+        },
+        "additionalProperties": false
+      },
+      "orderStatus": {
+        "type": "object",
+        "properties": {
+          "idOrderStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderStatus1": {
+            "type": "string",
+            "nullable": true
+          },
+          "workOrder": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/workOrder"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "rolEmployee": {
+        "type": "object",
+        "properties": {
+          "idRolEmployee": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descriptionRol": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/employee"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "servicePrice": {
+        "type": "object",
+        "properties": {
+          "idServicePrice": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idService": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idServiceNavigation": {
+            "$ref": "#/components/schemas/services"
+          },
+          "servicePriceHistory": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/servicePriceHistory"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "servicePriceHistory": {
+        "type": "object",
+        "properties": {
+          "idServicePriceHistory": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idServicePrice": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "changeBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "idServicePriceNavigation": {
+            "$ref": "#/components/schemas/servicePrice"
+          }
+        },
+        "additionalProperties": false
+      },
+      "services": {
+        "type": "object",
+        "properties": {
+          "idService": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descriptionServices": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/orderDetails"
+            },
+            "nullable": true
+          },
+          "servicePrice": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/servicePrice"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "specialties": {
+        "type": "object",
+        "properties": {
+          "idSpecialties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "specialty": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/employee"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "transport": {
+        "type": "object",
+        "properties": {
+          "idTransport": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typeTransport": {
+            "type": "string",
+            "nullable": true
+          },
+          "transportData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/transportData"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "transportData": {
+        "type": "object",
+        "properties": {
+          "idTransportData": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTransport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idCooperative": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idClient": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "plate": {
+            "type": "string",
+            "nullable": true
+          },
+          "num": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chassis": {
+            "type": "string",
+            "nullable": true
+          },
+          "budget": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/budget"
+            },
+            "nullable": true
+          },
+          "idClientNavigation": {
+            "$ref": "#/components/schemas/client"
+          },
+          "idCooperativeNavigation": {
+            "$ref": "#/components/schemas/cooperative"
+          },
+          "idTransportNavigation": {
+            "$ref": "#/components/schemas/transport"
+          }
+        },
+        "additionalProperties": false
+      },
+      "workOrder": {
+        "type": "object",
+        "properties": {
+          "idWorkOrder": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idEmployee": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idOrderStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "descriptionWO": {
+            "type": "string",
+            "nullable": true
+          },
+          "expires": {
+            "type": "string",
+            "format": "date"
+          },
+          "budget": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/budget"
+            },
+            "nullable": true
+          },
+          "idEmployeeNavigation": {
+            "$ref": "#/components/schemas/employee"
+          },
+          "idOrderStatusNavigation": {
+            "$ref": "#/components/schemas/orderStatus"
+          },
+          "orderDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/orderDetails"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

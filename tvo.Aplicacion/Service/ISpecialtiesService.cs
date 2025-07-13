@@ -22,6 +22,6 @@ namespace tvo.Aplicacion.Service
         [OperationContract]
         Task<specialties> GetByIdAsync(int id);
         [OperationContract]
-        Task<List<specialties>> ListSpecialties();
+        Task<List<specialties>> ListSpecialties(string specialitie);
     }
 }

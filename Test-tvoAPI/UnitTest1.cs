@@ -129,7 +129,7 @@ namespace Test_tvoAPI
             }
             Console.WriteLine("------------------------------------------------------------------------------------------");*/
 
-            /*
+            
             int employeeId = 10;
             var employeeWorkOrders = await _workOrderService.GetWorkOrdersByEmployeeId(employeeId);
             Console.WriteLine($"\nÓrdenes del Empleado ID: {employeeId}");
@@ -149,8 +149,9 @@ namespace Test_tvoAPI
             {
                 Console.WriteLine($"| {item.WorkOrderDescription,-22} | {item.OrderStatus,-13} |");
             }
-            Console.WriteLine("------------------------------------------------------------------------------------------");*/
+            Console.WriteLine("------------------------------------------------------------------------------------------");
 
+            /*
             var employeeService = await _employeeService.GetRolesWithServices();
             Console.WriteLine("\nRelación de Roles con Servicios:");
             Console.WriteLine($"Total de registros: {employeeService.Count}");
@@ -162,7 +163,7 @@ namespace Test_tvoAPI
             {
                 Console.WriteLine($"| {item.RoleDescription,-18} | {item.ServiceDescription,-20} |");
             }
-            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("-----------------------------------------------");*/
 
         }
 

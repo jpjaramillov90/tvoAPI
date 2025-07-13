@@ -1,0 +1,852 @@
+[
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BrandsController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Brands/InsertBrand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newBrand",
+        "Type": "tvo.Infraestructura.AccesoDatos.brands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BrandsController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Brands/ListBrands",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.brands, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Budget/InsertBudget",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newBudget",
+        "Type": "tvo.Infraestructura.AccesoDatos.budget",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Budget/ListBudget",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.budget, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/BudgetStatement/InsertBudgetStatement",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newbs",
+        "Type": "tvo.Infraestructura.AccesoDatos.budgetStatement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/BudgetStatement/ListBudgetStatements",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.budgetStatement, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Client/InsertClient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newClient",
+        "Type": "tvo.Infraestructura.AccesoDatos.client",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "ListClientAndStatus",
+    "RelativePath": "tvo/api/Client/ListClientAndStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.ClientAndStatusDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Client/ListClients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.client, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "SearchClient",
+    "RelativePath": "tvo/api/Client/ListWithFirstName/{firstName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Infraestructura.AccesoDatos.client, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Client/UpdateClient",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.client",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientStatusController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/ClientStatus/InsertClientStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCS",
+        "Type": "tvo.Infraestructura.AccesoDatos.clientStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientStatusController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/ClientStatus/ListClientStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.clientStatus, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Cooperative/InsertCoorperative",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newCoop",
+        "Type": "tvo.Infraestructura.AccesoDatos.cooperative",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Cooperative/ListCooperatives",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.cooperative, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Employee/InsertEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newEmployee",
+        "Type": "tvo.Infraestructura.AccesoDatos.employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Employee/ListEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.employee, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Models/InsertModels",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newModels",
+        "Type": "tvo.Infraestructura.AccesoDatos.models",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Models/ListModels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.models, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/OrderDetails/InsertOrderDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newOrderDetail",
+        "Type": "tvo.Infraestructura.AccesoDatos.orderDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/OrderDetails/ListOrderDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.orderDetails, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/OrderStatus/InsertOrderStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newOrderStatus",
+        "Type": "tvo.Infraestructura.AccesoDatos.orderStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/OrderStatus/ListOrderStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.orderStatus, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/RolEmployee/InsertRolEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newRolEmployee",
+        "Type": "tvo.Infraestructura.AccesoDatos.rolEmployee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/RolEmployee/ListRolEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.rolEmployee, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/ServicePrice/InsertServicePrice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newServicePrice",
+        "Type": "tvo.Infraestructura.AccesoDatos.servicePrice",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/ServicePrice/ListServicePrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.servicePrice, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
+    "Method": "GetServicesByMinPrice",
+    "RelativePath": "tvo/api/Services/GetServicesByMinPrice/{minPrice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "minPrice",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.ServicePriceDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Services/InsertService",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newService",
+        "Type": "tvo.Infraestructura.AccesoDatos.services",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
+    "Method": "GerAllAsync",
+    "RelativePath": "tvo/api/Services/ListServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.services, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Specialties/InsertSpecialitie",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newSpecialitie",
+        "Type": "tvo.Infraestructura.AccesoDatos.specialties",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Specialties/ListSpecialities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.specialties, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
+    "Method": "ListSpecialties",
+    "RelativePath": "tvo/api/Specialties/ListSpecialitiesByName/{specialitie}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "specialitie",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Infraestructura.AccesoDatos.specialties, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/Transport/InsertTransport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newTransport",
+        "Type": "tvo.Infraestructura.AccesoDatos.transport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/Transport/ListTransport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.transport, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "GetTransportDataWithClients",
+    "RelativePath": "tvo/api/TransportData/GetTransportDataWithClients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.TransportDataDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/TransportData/InsertTransportData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newTransportData",
+        "Type": "tvo.Infraestructura.AccesoDatos.transportData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/TransportData/ListTransportData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.transportData, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/WorkOrder/DeleteAsync/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "GetPendingWorkOrders",
+    "RelativePath": "tvo/api/WorkOrder/GetPendingWorkOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.PendingWorkOrderDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "tvo/api/WorkOrder/GetWorkOrderById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "tvo.Infraestructura.AccesoDatos.workOrder",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "GetWorkOrdersByEmployeeId",
+    "RelativePath": "tvo/api/WorkOrder/GetWorkOrdersByEmployeeId/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.EmployeeWorkOrdersDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "AddAsync",
+    "RelativePath": "tvo/api/WorkOrder/InsertWorkOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newWorkOrder",
+        "Type": "tvo.Infraestructura.AccesoDatos.workOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "GetAllAsync",
+    "RelativePath": "tvo/api/WorkOrder/ListWorkOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.workOrder, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/WorkOrder/UpdateWorkOrder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedWorkOrderDTO",
+        "Type": "tvo.Aplicacion.DTO.DTOs.UpdateWorkOrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

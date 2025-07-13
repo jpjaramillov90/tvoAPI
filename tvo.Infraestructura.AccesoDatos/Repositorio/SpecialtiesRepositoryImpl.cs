@@ -16,12 +16,12 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             _dbContext = dbContext;
         }
 
-        public Task<List<specialties>> ListSpecialties()
+        public Task<List<specialties>> ListSpecialties(string specialitie)
         {
             try
             {
                 var result = from tmp_specialties in _dbContext.specialties
-                             where tmp_specialties.specialty == "Pintura"
+                             where tmp_specialties.specialty == specialitie
                              select tmp_specialties;
                 return result.ToListAsync();
             }

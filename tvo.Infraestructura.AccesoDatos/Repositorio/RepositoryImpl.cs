@@ -73,7 +73,7 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
         {
             try
             {
-                _dbSet.Update(entity); //actualiza las tablas
+                _dbSet.Update(entity); 
                 await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
