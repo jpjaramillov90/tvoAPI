@@ -35,5 +35,26 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar rol" + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteRolEmployee/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var rolEmployee = await _rolEmployeeService.GetByIdAsync(id);
+                if (rolEmployee == null)
+                {
+                    return NotFound("Rol de empleado no encontrado.");
+                }
+                await _rolEmployeeService.DeleteAsync(id);
+                return Ok("Rol de empleado eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar rol de empleado: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar rol de empleado: " + ex.Message);
+            }
+        }
+
     }
 }

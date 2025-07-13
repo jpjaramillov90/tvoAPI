@@ -41,5 +41,24 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpDelete("DeleteSpecialitie/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var specialitie = await _specialtiesService.GetByIdAsync(id);
+                if (specialitie == null)
+                {
+                    return NotFound("Especialidad no encontrada.");
+                }
+                await _specialtiesService.DeleteAsync(id);
+                return Ok("Especialidad eliminada exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar especialidad: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar especialidad: " + ex.Message);
+            }
+        }
     }
 }

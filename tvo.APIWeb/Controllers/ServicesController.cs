@@ -41,6 +41,25 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar servicio" + ex.Message);
             }
         }
+        [HttpDelete("DeleteService/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var service = await _servicesService.GetByIdAsync(id);
+                if (service == null)
+                {
+                    return NotFound("Servicio no encontrado.");
+                }
+                await _servicesService.DeleteAsync(id);
+                return Ok("Servicio eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar servicio: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar servicio: " + ex.Message);
+            }
 
+        }
     }
 }

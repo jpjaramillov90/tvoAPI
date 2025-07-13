@@ -35,5 +35,26 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar empleado" + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteEmployee/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var employee = await _employeeService.GetByIdAsync(id);
+                if (employee == null)
+                {
+                    return NotFound("Empleado no encontrado.");
+                }
+                await _employeeService.DeleteAsync(id);
+                return Ok("Empleado eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar empleado: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar empleado: " + ex.Message);
+            }
+        }
+
     }
 }

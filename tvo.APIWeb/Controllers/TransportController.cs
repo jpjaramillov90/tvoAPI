@@ -32,5 +32,25 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar transporte: " + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteTransport/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var transport = await _transportService.GetByIdAsync(id);
+                if (transport == null)
+                {
+                    return NotFound("Transporte no encontrado.");
+                }
+                await _transportService.DeleteAsync(id);
+                return Ok("Transporte eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar transporte: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar transporte: " + ex.Message);
+            }
+        }
     }
 }

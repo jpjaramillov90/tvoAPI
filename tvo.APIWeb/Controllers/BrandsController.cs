@@ -36,5 +36,25 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpDelete("DeleteBrand/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var brand = await _brandsService.GetByIdAsync(id);
+                if (brand == null)
+                {
+                    return NotFound("Marca no encontrada.");
+                }
+                await _brandsService.DeleteAsync(id);
+                return Ok("Marca eliminada exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar marca: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar marca: " + ex.Message);
+            }
+        }
+
     }
 }

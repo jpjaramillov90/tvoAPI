@@ -35,5 +35,24 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar orden" + ex.Message);
             }
         }
+        [HttpDelete("DeleteOrderStatus/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var orderStatus = await _orderStatus.GetByIdAsync(id);
+                if (orderStatus == null)
+                {
+                    return NotFound("Estado de orden no encontrado.");
+                }
+                await _orderStatus.DeleteAsync(id);
+                return Ok("Estado de orden eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar estado de orden: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar estado de orden: " + ex.Message);
+            }
+        }
     }
 }

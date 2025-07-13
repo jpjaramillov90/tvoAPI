@@ -34,5 +34,26 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar precio de servicio" + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteServicePrice/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var servicePrice = await _servicePriceService.GetByIdAsync(id);
+                if (servicePrice == null)
+                {
+                    return NotFound("Precio de servicio no encontrado.");
+                }
+                await _servicePriceService.DeleteAsync(id);
+                return Ok("Precio de servicio eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar precio de servicio: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al eliminar precio de servicio: " + ex.Message);
+            }
+
+        }
     }
 }

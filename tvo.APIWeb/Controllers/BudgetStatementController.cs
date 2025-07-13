@@ -16,7 +16,7 @@ namespace tvo.APIWeb.Controllers
         }
 
         [HttpGet("ListBudgetStatements")]
-        public Task<IEnumerable<budgetStatement>> GetAllAsync() 
+        public Task<IEnumerable<budgetStatement>> GetAllAsync()
         {
             return _budgetStatementService.GetAllAsync();
         }
@@ -24,10 +24,10 @@ namespace tvo.APIWeb.Controllers
         [HttpPost("InsertBudgetStatement")]
         public async Task<ActionResult> AddAsync([FromBody] budgetStatement newbs)
         {
-            try 
-            { 
-            await _budgetStatementService.AddAsync(newbs);
-            return Ok("Estado de marca insertado correctamente.");
+            try
+            {
+                await _budgetStatementService.AddAsync(newbs);
+                return Ok("Estado de marca insertado correctamente.");
             }
             catch (Exception ex)
             {
@@ -36,5 +36,25 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpDelete("DeleteBudgetStatement/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var budgetStatement = await _budgetStatementService.GetByIdAsync(id);
+                if (budgetStatement == null)
+                {
+                    return NotFound("Estado de marca no encontrado.");
+                }
+                await _budgetStatementService.DeleteAsync(id);
+                return Ok("Estado de marca eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar estado de marca: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar estado de marca: " + ex.Message);
+            }
+
+        }
     }
 }

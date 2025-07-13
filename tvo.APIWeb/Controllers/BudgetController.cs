@@ -6,7 +6,7 @@ namespace tvo.APIWeb.Controllers
 {
     [ApiController]
     [Route("tvo/api/[controller]")]
-    public class BudgetController: Controller
+    public class BudgetController : Controller
     {
         private IBudgetService _budgetService;
 
@@ -36,5 +36,25 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpDelete("DeleteBudget/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var budget = await _budgetService.GetByIdAsync(id);
+                if (budget == null)
+                {
+                    return NotFound("Presupuesto no encontrado.");
+                }
+                await _budgetService.DeleteAsync(id);
+                return Ok("Presupuesto eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar presupuesto: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar presupuesto: " + ex.Message);
+            }
+
+        }
     }
 }

@@ -35,5 +35,26 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error interno del servidor al insertar cooperativa: " + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteModels/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var model = await _modelsService.GetByIdAsync(id);
+                if (model == null)
+                {
+                    return NotFound("Modelo no encontrado.");
+                }
+                await _modelsService.DeleteAsync(id);
+                return Ok("Modelo eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar modelo: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar modelo: " + ex.Message);
+            }
+
+        }
     }
 }

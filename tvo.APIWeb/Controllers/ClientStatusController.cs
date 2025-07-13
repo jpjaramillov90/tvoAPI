@@ -35,5 +35,26 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error interno del servidor al insertar estado de cliente: " + ex.Message);
             }
         }
+
+        [HttpDelete("DeleteClientStatus/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var clientStatus = await _clientStatusService.GetByIdAsync(id);
+                if (clientStatus == null)
+                {
+                    return NotFound("Estado de cliente no encontrado.");
+                }
+                await _clientStatusService.DeleteAsync(id);
+                return Ok("Estado de cliente eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar estado de cliente: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar estado de cliente: " + ex.Message);
+            }
+        }
+
     }
 }

@@ -65,5 +65,25 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
-    }
+        [HttpDelete("DeleteClient/{id}")]
+        public async Task<ActionResult> DeleteAsync(int id)
+        {
+            try
+            {
+                var client = await _clientService.GetByIdAsync(id);
+                if (client == null)
+                {
+                    return NotFound("Cliente no encontrado.");
+                }
+                await _clientService.DeleteAsync(id);
+                return Ok("Cliente eliminado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar cliente: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al eliminar cliente: " + ex.Message);
+            }
+
+        }
+    } 
 }
