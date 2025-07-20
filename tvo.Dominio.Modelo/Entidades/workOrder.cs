@@ -2,26 +2,23 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class workOrder
 {
     public int idWorkOrder { get; set; }
-
     public int? idEmployee { get; set; }
-
     public int? idOrderStatus { get; set; }
-
     public string descriptionWO { get; set; }
-
     public DateOnly expires { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<budget> budget { get; set; } = new List<budget>();
-
+    [JsonIgnore]
     public virtual employee idEmployeeNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual orderStatus idOrderStatusNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<orderDetails> orderDetails { get; set; } = new List<orderDetails>();
 }

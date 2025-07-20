@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -24,10 +25,10 @@ public partial class employee
     public string addressEmp { get; set; }
 
     public string mail { get; set; }
-
+    [JsonIgnore]
     public virtual rolEmployee idRolEmployeeNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual specialties idSpecialtiesNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<workOrder> workOrder { get; set; } = new List<workOrder>();
 }

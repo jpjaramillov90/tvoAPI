@@ -2,14 +2,14 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class budgetStatement
 {
     public int idBudgetStatement { get; set; }
-
     public string descriptionStatement { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<budget> budget { get; set; } = new List<budget>();
 }

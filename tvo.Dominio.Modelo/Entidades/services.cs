@@ -2,16 +2,16 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class services
 {
     public int idService { get; set; }
-
     public string descriptionServices { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<orderDetails> orderDetails { get; set; } = new List<orderDetails>();
-
+    [JsonIgnore]
     public virtual ICollection<servicePrice> servicePrice { get; set; } = new List<servicePrice>();
 }

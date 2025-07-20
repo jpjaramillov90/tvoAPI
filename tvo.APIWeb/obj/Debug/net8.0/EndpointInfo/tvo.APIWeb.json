@@ -74,6 +74,29 @@
         }
       }
     },
+    "/tvo/api/Brands/DeleteBrand/{id}": {
+      "delete": {
+        "tags": [
+          "Brands"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Budget/ListBudget": {
       "get": {
         "tags": [
@@ -143,6 +166,29 @@
         }
       }
     },
+    "/tvo/api/Budget/DeleteBudget/{id}": {
+      "delete": {
+        "tags": [
+          "Budget"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/BudgetStatement/ListBudgetStatements": {
       "get": {
         "tags": [
@@ -205,6 +251,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/BudgetStatement/DeleteBudgetStatement/{id}": {
+      "delete": {
+        "tags": [
+          "BudgetStatement"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -398,6 +467,29 @@
         }
       }
     },
+    "/tvo/api/Client/DeleteClient/{id}": {
+      "delete": {
+        "tags": [
+          "Client"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/ClientStatus/ListClientStatus": {
       "get": {
         "tags": [
@@ -460,6 +552,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/ClientStatus/DeleteClientStatus/{id}": {
+      "delete": {
+        "tags": [
+          "ClientStatus"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -536,6 +651,29 @@
         }
       }
     },
+    "/tvo/api/Cooperative/DeleteCoorperative/{id}": {
+      "delete": {
+        "tags": [
+          "Cooperative"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Employee/ListEmployee": {
       "get": {
         "tags": [
@@ -598,6 +736,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Employee/DeleteEmployee/{id}": {
+      "delete": {
+        "tags": [
+          "Employee"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -674,6 +835,29 @@
         }
       }
     },
+    "/tvo/api/Models/DeleteModels/{id}": {
+      "delete": {
+        "tags": [
+          "Models"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/OrderDetails/ListOrderDetails": {
       "get": {
         "tags": [
@@ -736,6 +920,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderDetails/DeleteOrderDetail/{id}": {
+      "delete": {
+        "tags": [
+          "OrderDetails"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -812,6 +1019,29 @@
         }
       }
     },
+    "/tvo/api/OrderStatus/DeleteOrderStatus/{id}": {
+      "delete": {
+        "tags": [
+          "OrderStatus"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/RolEmployee/ListRolEmployee": {
       "get": {
         "tags": [
@@ -881,6 +1111,29 @@
         }
       }
     },
+    "/tvo/api/RolEmployee/DeleteRolEmployee/{id}": {
+      "delete": {
+        "tags": [
+          "RolEmployee"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/ServicePrice/ListServicePrice": {
       "get": {
         "tags": [
@@ -943,6 +1196,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/ServicePrice/DeleteServicePrice/{id}": {
+      "delete": {
+        "tags": [
+          "ServicePrice"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1068,6 +1344,29 @@
         }
       }
     },
+    "/tvo/api/Services/DeleteService/{id}": {
+      "delete": {
+        "tags": [
+          "Services"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Specialties/ListSpecialitiesByName/{specialitie}": {
       "get": {
         "tags": [
@@ -1185,6 +1484,29 @@
         }
       }
     },
+    "/tvo/api/Specialties/DeleteSpecialitie/{id}": {
+      "delete": {
+        "tags": [
+          "Specialties"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Transport/ListTransport": {
       "get": {
         "tags": [
@@ -1247,6 +1569,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Transport/DeleteTransport/{id}": {
+      "delete": {
+        "tags": [
+          "Transport"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1354,6 +1699,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/TransportData/DeleteTransportData/{id}": {
+      "delete": {
+        "tags": [
+          "TransportData"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1588,7 +1956,7 @@
         }
       }
     },
-    "/tvo/api/WorkOrder/DeleteAsync/{id}": {
+    "/tvo/api/WorkOrder/DeleteWorkOrder/{id}": {
       "delete": {
         "tags": [
           "WorkOrder"
@@ -1767,20 +2135,6 @@
           "brand": {
             "type": "string",
             "nullable": true
-          },
-          "budget": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/budget"
-            },
-            "nullable": true
-          },
-          "models": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/models"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1825,18 +2179,6 @@
           "comments": {
             "type": "string",
             "nullable": true
-          },
-          "idBrandsNavigation": {
-            "$ref": "#/components/schemas/brands"
-          },
-          "idBudgetStatementNavigation": {
-            "$ref": "#/components/schemas/budgetStatement"
-          },
-          "idTransportDataNavigation": {
-            "$ref": "#/components/schemas/transportData"
-          },
-          "idWorkOrderNavigation": {
-            "$ref": "#/components/schemas/workOrder"
           }
         },
         "additionalProperties": false
@@ -1850,13 +2192,6 @@
           },
           "descriptionStatement": {
             "type": "string",
-            "nullable": true
-          },
-          "budget": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/budget"
-            },
             "nullable": true
           }
         },
@@ -1901,16 +2236,6 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
-          },
-          "idClientStatusNavigation": {
-            "$ref": "#/components/schemas/clientStatus"
-          },
-          "transportData": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/transportData"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1925,13 +2250,6 @@
           "clientStatus1": {
             "type": "string",
             "nullable": true
-          },
-          "client": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/client"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1945,13 +2263,6 @@
           },
           "nameCooperative": {
             "type": "string",
-            "nullable": true
-          },
-          "transportData": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/transportData"
-            },
             "nullable": true
           }
         },
@@ -1997,19 +2308,6 @@
           "mail": {
             "type": "string",
             "nullable": true
-          },
-          "idRolEmployeeNavigation": {
-            "$ref": "#/components/schemas/rolEmployee"
-          },
-          "idSpecialtiesNavigation": {
-            "$ref": "#/components/schemas/specialties"
-          },
-          "workOrder": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/workOrder"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2029,9 +2327,6 @@
           "models1": {
             "type": "string",
             "nullable": true
-          },
-          "idBrandsNavigation": {
-            "$ref": "#/components/schemas/brands"
           }
         },
         "additionalProperties": false
@@ -2052,12 +2347,6 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
-          },
-          "idServiceNavigation": {
-            "$ref": "#/components/schemas/services"
-          },
-          "idWorkOrderNavigation": {
-            "$ref": "#/components/schemas/workOrder"
           }
         },
         "additionalProperties": false
@@ -2072,13 +2361,6 @@
           "orderStatus1": {
             "type": "string",
             "nullable": true
-          },
-          "workOrder": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/workOrder"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2092,13 +2374,6 @@
           },
           "descriptionRol": {
             "type": "string",
-            "nullable": true
-          },
-          "employee": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/employee"
-            },
             "nullable": true
           }
         },
@@ -2120,53 +2395,6 @@
             "type": "number",
             "format": "double",
             "nullable": true
-          },
-          "idServiceNavigation": {
-            "$ref": "#/components/schemas/services"
-          },
-          "servicePriceHistory": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/servicePriceHistory"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "servicePriceHistory": {
-        "type": "object",
-        "properties": {
-          "idServicePriceHistory": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idServicePrice": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "changeBy": {
-            "type": "string",
-            "nullable": true
-          },
-          "idServicePriceNavigation": {
-            "$ref": "#/components/schemas/servicePrice"
           }
         },
         "additionalProperties": false
@@ -2180,20 +2408,6 @@
           },
           "descriptionServices": {
             "type": "string",
-            "nullable": true
-          },
-          "orderDetails": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/orderDetails"
-            },
-            "nullable": true
-          },
-          "servicePrice": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/servicePrice"
-            },
             "nullable": true
           }
         },
@@ -2209,13 +2423,6 @@
           "specialty": {
             "type": "string",
             "nullable": true
-          },
-          "employee": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/employee"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2229,13 +2436,6 @@
           },
           "typeTransport": {
             "type": "string",
-            "nullable": true
-          },
-          "transportData": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/transportData"
-            },
             "nullable": true
           }
         },
@@ -2274,22 +2474,6 @@
           "chassis": {
             "type": "string",
             "nullable": true
-          },
-          "budget": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/budget"
-            },
-            "nullable": true
-          },
-          "idClientNavigation": {
-            "$ref": "#/components/schemas/client"
-          },
-          "idCooperativeNavigation": {
-            "$ref": "#/components/schemas/cooperative"
-          },
-          "idTransportNavigation": {
-            "$ref": "#/components/schemas/transport"
           }
         },
         "additionalProperties": false
@@ -2318,26 +2502,6 @@
           "expires": {
             "type": "string",
             "format": "date"
-          },
-          "budget": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/budget"
-            },
-            "nullable": true
-          },
-          "idEmployeeNavigation": {
-            "$ref": "#/components/schemas/employee"
-          },
-          "idOrderStatusNavigation": {
-            "$ref": "#/components/schemas/orderStatus"
-          },
-          "orderDetails": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/orderDetails"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

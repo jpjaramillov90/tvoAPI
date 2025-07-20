@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -22,12 +23,12 @@ public partial class budget
     public DateOnly? validUntil { get; set; }
 
     public string comments { get; set; }
-
+    [JsonIgnore]
     public virtual brands idBrandsNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual budgetStatement idBudgetStatementNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual transportData idTransportDataNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual workOrder idWorkOrderNavigation { get; set; }
 }

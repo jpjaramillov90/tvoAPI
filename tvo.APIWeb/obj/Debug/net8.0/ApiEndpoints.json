@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "tvo.APIWeb.Controllers.BrandsController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Brands/DeleteBrand/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BrandsController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/Brands/InsertBrand",
     "HttpMethod": "POST",
@@ -34,6 +50,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Budget/DeleteBudget/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
@@ -73,6 +105,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/BudgetStatement/DeleteBudgetStatement/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/BudgetStatement/InsertBudgetStatement",
     "HttpMethod": "POST",
@@ -106,6 +154,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Client/DeleteClient/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ClientController",
@@ -207,6 +271,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ClientStatusController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/ClientStatus/DeleteClientStatus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientStatusController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/ClientStatus/InsertClientStatus",
     "HttpMethod": "POST",
@@ -240,6 +320,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Cooperative/DeleteCoorperative/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
@@ -279,6 +375,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Employee/DeleteEmployee/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/Employee/InsertEmployee",
     "HttpMethod": "POST",
@@ -312,6 +424,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Models/DeleteModels/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
@@ -351,6 +479,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/OrderDetails/DeleteOrderDetail/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/OrderDetails/InsertOrderDetail",
     "HttpMethod": "POST",
@@ -384,6 +528,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/OrderStatus/DeleteOrderStatus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
@@ -423,6 +583,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/RolEmployee/DeleteRolEmployee/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/RolEmployee/InsertRolEmployee",
     "HttpMethod": "POST",
@@ -459,6 +635,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/ServicePrice/DeleteServicePrice/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/ServicePrice/InsertServicePrice",
     "HttpMethod": "POST",
@@ -492,6 +684,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Services/DeleteService/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
@@ -557,6 +765,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Specialties/DeleteSpecialitie/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/Specialties/InsertSpecialitie",
     "HttpMethod": "POST",
@@ -619,6 +843,22 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.TransportController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/Transport/DeleteTransport/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportController",
     "Method": "AddAsync",
     "RelativePath": "tvo/api/Transport/InsertTransport",
     "HttpMethod": "POST",
@@ -652,6 +892,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "DeleteAsync",
+    "RelativePath": "tvo/api/TransportData/DeleteTransportData/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
@@ -712,7 +968,7 @@
   {
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
     "Method": "DeleteAsync",
-    "RelativePath": "tvo/api/WorkOrder/DeleteAsync/{id}",
+    "RelativePath": "tvo/api/WorkOrder/DeleteWorkOrder/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

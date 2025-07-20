@@ -2,30 +2,25 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class transportData
 {
     public int idTransportData { get; set; }
-
     public int? idTransport { get; set; }
-
     public int? idCooperative { get; set; }
-
     public int? idClient { get; set; }
-
     public string plate { get; set; }
-
     public int num { get; set; }
-
     public string chassis { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<budget> budget { get; set; } = new List<budget>();
-
+    [JsonIgnore]
     public virtual client idClientNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual cooperative idCooperativeNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual transport idTransportNavigation { get; set; }
 }

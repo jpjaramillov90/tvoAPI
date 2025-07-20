@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -24,8 +25,8 @@ public partial class client
     public string passwordClient { get; set; }
 
     public int? idClientStatus { get; set; }
-
+    [JsonIgnore]
     public virtual clientStatus idClientStatusNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<transportData> transportData { get; set; } = new List<transportData>();
 }

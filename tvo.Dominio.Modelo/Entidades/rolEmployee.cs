@@ -2,14 +2,14 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class rolEmployee
 {
     public int idRolEmployee { get; set; }
-
     public string descriptionRol { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<employee> employee { get; set; } = new List<employee>();
 }

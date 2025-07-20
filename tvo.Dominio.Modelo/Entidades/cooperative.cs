@@ -2,14 +2,14 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class cooperative
 {
     public int idCooperative { get; set; }
-
     public string nameCooperative { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<transportData> transportData { get; set; } = new List<transportData>();
 }

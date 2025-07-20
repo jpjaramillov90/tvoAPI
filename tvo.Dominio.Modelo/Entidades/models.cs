@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -12,6 +13,6 @@ public partial class models
     public int? idBrands { get; set; }
 
     public string models1 { get; set; }
-
+    [JsonIgnore]
     public virtual brands idBrandsNavigation { get; set; }
 }

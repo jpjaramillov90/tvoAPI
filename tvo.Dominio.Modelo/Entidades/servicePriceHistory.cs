@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -18,6 +19,6 @@ public partial class servicePriceHistory
     public DateOnly? endDate { get; set; }
 
     public string changeBy { get; set; }
-
+    [JsonIgnore]
     public virtual servicePrice idServicePriceNavigation { get; set; }
 }

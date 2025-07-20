@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
@@ -12,8 +13,8 @@ public partial class orderDetails
     public int? idWorkOrder { get; set; }
 
     public int? idService { get; set; }
-
+    [JsonIgnore]
     public virtual services idServiceNavigation { get; set; }
-
+    [JsonIgnore]
     public virtual workOrder idWorkOrderNavigation { get; set; }
 }

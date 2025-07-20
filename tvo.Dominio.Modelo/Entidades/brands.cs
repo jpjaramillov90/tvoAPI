@@ -2,16 +2,16 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace tvo.Infraestructura.AccesoDatos;
 
 public partial class brands
 {
     public int idBrands { get; set; }
-
     public string brand { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<budget> budget { get; set; } = new List<budget>();
-
+    [JsonIgnore]
     public virtual ICollection<models> models { get; set; } = new List<models>();
 }
