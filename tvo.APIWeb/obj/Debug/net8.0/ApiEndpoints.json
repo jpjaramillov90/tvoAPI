@@ -426,6 +426,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Employee/UpdateEmployee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/Models/DeleteModels/{id}",

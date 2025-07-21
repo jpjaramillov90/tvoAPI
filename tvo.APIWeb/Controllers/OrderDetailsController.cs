@@ -31,10 +31,26 @@ namespace tvo.APIWeb.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al insertar empleado: " + ex.Message);
-                return StatusCode(500, "Error en el servidor al insertar empleado" + ex.Message);
+                Console.WriteLine("Error al insertar detalle de orden: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al insertar detalle de orden" + ex.Message);
             }
         }
+
+        [HttpPut("UpdateOrderDetail")]
+        public async Task<ActionResult> UpdateAsync([FromBody] orderDetails entity)
+        {
+            try
+            {
+                await _orderDetailsService.UpdateAsync(entity);
+                return Ok("Detalle de orden actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar detalle de orden: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar detalle de orden: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteOrderDetail/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

@@ -27,12 +27,26 @@ namespace tvo.APIWeb.Controllers
             try
             {
                 await _budgetService.AddAsync(newBudget);
-                return Ok("Marca insertada exitosamente.");
+                return Ok("Presupuesto insertada exitosamente.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al insertar marca: " + ex.Message);
-                return StatusCode(500, "Error interno del servidor al insertar marca: " + ex.Message);
+                Console.WriteLine("Error al insertar presupuesto: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al insertar presupuesto: " + ex.Message);
+            }
+        }
+        [HttpPut("UpdateBudget")]
+        public async Task<ActionResult> UpdateAsync([FromBody] budget entity)
+        {
+            try
+            {
+                await _budgetService.UpdateAsync(entity);
+                return Ok("Presupuesto actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar presupuesto: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar presupuesto: " + ex.Message);
             }
         }
 

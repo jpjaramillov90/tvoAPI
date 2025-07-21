@@ -36,6 +36,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateClientStatus")]
+        public async Task<ActionResult> UpdateAsync([FromBody] clientStatus entity)
+        {
+            try
+            {
+                await _clientStatusService.UpdateAsync(entity);
+                return Ok("Estado de cliente actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar estado de cliente: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar estado de cliente: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteClientStatus/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

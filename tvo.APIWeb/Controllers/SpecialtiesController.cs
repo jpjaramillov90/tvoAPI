@@ -41,6 +41,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateSpecialitie")]
+        public async Task<ActionResult> UpdateAsync([FromBody] specialties entity)
+        {
+            try
+            {
+                await _specialtiesService.UpdateAsync(entity);
+                return Ok("Especialidad actualizada exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar especialidad: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar especialidad: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteSpecialitie/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

@@ -32,7 +32,22 @@ namespace tvo.APIWeb.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine("Error al insertar modelo: " + ex.Message);
-                return StatusCode(500, "Error interno del servidor al insertar cooperativa: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al insertar modelo: " + ex.Message);
+            }
+        }
+
+        [HttpPut("UpdateModels")]
+        public async Task<ActionResult> UpdateAsync([FromBody] models entity)
+        {
+            try
+            {
+                await _modelsService.UpdateAsync(entity);
+                return Ok("Modelo actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar modelo: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar modelo: " + ex.Message);
             }
         }
 

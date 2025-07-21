@@ -36,6 +36,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateBrand")]
+        public async Task<ActionResult> UpdateAsync([FromBody] brands entity)
+        {
+            try
+            {
+                await _brandsService.UpdateAsync(entity);
+                return Ok("Marca actualizada exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar marca: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar marca: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteBrand/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

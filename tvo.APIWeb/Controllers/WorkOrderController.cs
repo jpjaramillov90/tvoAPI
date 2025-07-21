@@ -67,6 +67,21 @@ namespace tvo.APIWeb.Controllers
         }
 
         [HttpPut("UpdateWorkOrder")]
+        public async Task<ActionResult> UpdateAsync([FromBody] workOrder updatedWorkOrder)
+        {
+            try
+            {
+                await _workOrderService.UpdateAsync(updatedWorkOrder);
+                return Ok("Orden de trabajo actualizada correctamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar orden de trabajo: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar orden de trabajo: " + ex.Message);
+            }
+        }
+
+        [HttpPut("UpdateWorkOrderDTO")]
         public async Task<ActionResult> UpdateAsync([FromBody] UpdateWorkOrderDTO updatedWorkOrderDTO)
         {
             try

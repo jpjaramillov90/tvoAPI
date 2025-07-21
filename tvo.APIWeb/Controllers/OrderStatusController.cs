@@ -35,6 +35,22 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar orden" + ex.Message);
             }
         }
+
+        [HttpPut("UpdateOrderStatus")]
+        public async Task<ActionResult> UpdateAsync([FromBody] orderStatus entity)
+        {
+            try
+            {
+                await _orderStatus.UpdateAsync(entity);
+                return Ok("Estado de orden actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar estado de orden: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar estado de orden: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteOrderStatus/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

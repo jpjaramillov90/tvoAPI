@@ -35,6 +35,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateServicePrice")]
+        public async Task<ActionResult> UpdateAsync([FromBody] servicePrice entity)
+        {
+            try
+            {
+                await _servicePriceService.UpdateAsync(entity);
+                return Ok("Precio de servicio actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar precio de servicio: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar precio de servicio: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteServicePrice/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

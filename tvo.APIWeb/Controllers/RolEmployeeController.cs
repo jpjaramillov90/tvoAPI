@@ -31,8 +31,23 @@ namespace tvo.APIWeb.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error al insertar rol: " + ex.Message);
-                return StatusCode(500, "Error en el servidor al insertar rol" + ex.Message);
+                Console.WriteLine("Error al insertar rol de empleado: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al insertar rol de empleado" + ex.Message);
+            }
+        }
+
+        [HttpPut("UpdateRolEmployee")]
+        public async Task<ActionResult> UpdateAsync([FromBody] rolEmployee entity)
+        {
+            try
+            {
+                await _rolEmployeeService.UpdateAsync(entity);
+                return Ok("Rol de empleado actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar rol de empleado: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar rol de empleado: " + ex.Message);
             }
         }
 

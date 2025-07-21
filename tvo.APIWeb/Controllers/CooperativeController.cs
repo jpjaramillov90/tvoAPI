@@ -36,6 +36,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateCoorperative")]
+        public async Task<ActionResult> UpdateAsync([FromBody] cooperative entity)
+        {
+            try
+            {
+                await _cooperativeService.UpdateAsync(entity);
+                return Ok("Cooperativa actualizada exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar cooperativa: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar cooperativa: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteCoorperative/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

@@ -36,6 +36,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateEmployee")]
+        public async Task<ActionResult> UpdateAsync([FromBody] employee entity)
+        {
+            try
+            {
+                await _employeeService.UpdateAsync(entity);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar empleado: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al actualizar empleado: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteEmployee/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

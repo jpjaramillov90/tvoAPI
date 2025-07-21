@@ -41,6 +41,22 @@ namespace tvo.APIWeb.Controllers
                 return StatusCode(500, "Error en el servidor al insertar servicio" + ex.Message);
             }
         }
+
+        [HttpPut("UpdateService")]
+        public async Task<ActionResult> UpdateAsync([FromBody] services entity)
+        {
+            try
+            {
+                await _servicesService.UpdateAsync(entity);
+                return Ok("Servicio actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar servicio: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar servicio: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteService/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

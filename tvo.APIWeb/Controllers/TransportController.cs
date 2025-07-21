@@ -33,6 +33,21 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpPut("UpdateTransport")]
+        public async Task<ActionResult> UpdateAsync([FromBody] transport entity)
+        {
+            try
+            {
+                await _transportService.UpdateAsync(entity);
+                return Ok("Transporte actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar transporte: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al actualizar transporte: " + ex.Message);
+            }
+        }
+
         [HttpDelete("DeleteTransport/{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
