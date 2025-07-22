@@ -52,6 +52,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.BrandsController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Brands/UpdateBrand",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.brands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/Budget/DeleteBudget/{id}",
@@ -104,6 +120,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Budget/UpdateBudget",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.budget",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/BudgetStatement/DeleteBudgetStatement/{id}",
@@ -154,6 +186,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.BudgetStatementController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/BudgetStatement/UpdateBudgetStatement",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.budgetStatement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ClientController",
@@ -322,6 +370,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientStatusController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/ClientStatus/UpdateClientStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.clientStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/Cooperative/DeleteCoorperative/{id}",
@@ -372,6 +436,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.CooperativeController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Cooperative/UpdateCoorperative",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.cooperative",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.EmployeeController",
@@ -494,6 +574,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.ModelsController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Models/UpdateModels",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.models",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/OrderDetails/DeleteOrderDetail/{id}",
@@ -544,6 +640,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderDetailsController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/OrderDetails/UpdateOrderDetail",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.orderDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
@@ -598,6 +710,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.OrderStatusController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/OrderStatus/UpdateOrderStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.orderStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/RolEmployee/DeleteRolEmployee/{id}",
@@ -650,6 +778,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.RolEmployeeController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/RolEmployee/UpdateRolEmployee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.rolEmployee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/ServicePrice/DeleteServicePrice/{id}",
@@ -700,6 +844,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicePriceController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/ServicePrice/UpdateServicePrice",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.servicePrice",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
@@ -780,6 +940,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.ServicesController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Services/UpdateService",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.services",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/Specialties/DeleteSpecialitie/{id}",
@@ -858,6 +1034,22 @@
     ]
   },
   {
+    "ContainingType": "tvo.APIWeb.Controllers.SpecialtiesController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Specialties/UpdateSpecialitie",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.specialties",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "tvo.APIWeb.Controllers.TransportController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/Transport/DeleteTransport/{id}",
@@ -908,6 +1100,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/Transport/UpdateTransport",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.transport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
@@ -980,6 +1188,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/TransportData/UpdateTransportData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "tvo.Infraestructura.AccesoDatos.transportData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
@@ -1109,6 +1333,22 @@
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
     "Method": "UpdateAsync",
     "RelativePath": "tvo/api/WorkOrder/UpdateWorkOrder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedWorkOrder",
+        "Type": "tvo.Infraestructura.AccesoDatos.workOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "UpdateAsync",
+    "RelativePath": "tvo/api/WorkOrder/UpdateWorkOrderDTO",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

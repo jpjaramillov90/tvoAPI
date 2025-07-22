@@ -74,6 +74,37 @@
         }
       }
     },
+    "/tvo/api/Brands/UpdateBrand": {
+      "put": {
+        "tags": [
+          "Brands"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/brands"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Brands/DeleteBrand/{id}": {
       "delete": {
         "tags": [
@@ -166,6 +197,37 @@
         }
       }
     },
+    "/tvo/api/Budget/UpdateBudget": {
+      "put": {
+        "tags": [
+          "Budget"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/budget"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Budget/DeleteBudget/{id}": {
       "delete": {
         "tags": [
@@ -229,6 +291,37 @@
     },
     "/tvo/api/BudgetStatement/InsertBudgetStatement": {
       "post": {
+        "tags": [
+          "BudgetStatement"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/budgetStatement"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/BudgetStatement/UpdateBudgetStatement": {
+      "put": {
         "tags": [
           "BudgetStatement"
         ],
@@ -559,6 +652,37 @@
         }
       }
     },
+    "/tvo/api/ClientStatus/UpdateClientStatus": {
+      "put": {
+        "tags": [
+          "ClientStatus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/clientStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/ClientStatus/DeleteClientStatus/{id}": {
       "delete": {
         "tags": [
@@ -622,6 +746,37 @@
     },
     "/tvo/api/Cooperative/InsertCoorperative": {
       "post": {
+        "tags": [
+          "Cooperative"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/cooperative"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Cooperative/UpdateCoorperative": {
+      "put": {
         "tags": [
           "Cooperative"
         ],
@@ -866,6 +1021,37 @@
         }
       }
     },
+    "/tvo/api/Models/UpdateModels": {
+      "put": {
+        "tags": [
+          "Models"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/models"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Models/DeleteModels/{id}": {
       "delete": {
         "tags": [
@@ -929,6 +1115,37 @@
     },
     "/tvo/api/OrderDetails/InsertOrderDetail": {
       "post": {
+        "tags": [
+          "OrderDetails"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderDetails"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/OrderDetails/UpdateOrderDetail": {
+      "put": {
         "tags": [
           "OrderDetails"
         ],
@@ -1050,6 +1267,37 @@
         }
       }
     },
+    "/tvo/api/OrderStatus/UpdateOrderStatus": {
+      "put": {
+        "tags": [
+          "OrderStatus"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/orderStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/OrderStatus/DeleteOrderStatus/{id}": {
       "delete": {
         "tags": [
@@ -1142,6 +1390,37 @@
         }
       }
     },
+    "/tvo/api/RolEmployee/UpdateRolEmployee": {
+      "put": {
+        "tags": [
+          "RolEmployee"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/rolEmployee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/RolEmployee/DeleteRolEmployee/{id}": {
       "delete": {
         "tags": [
@@ -1205,6 +1484,37 @@
     },
     "/tvo/api/ServicePrice/InsertServicePrice": {
       "post": {
+        "tags": [
+          "ServicePrice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/servicePrice"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/ServicePrice/UpdateServicePrice": {
+      "put": {
         "tags": [
           "ServicePrice"
         ],
@@ -1375,6 +1685,37 @@
         }
       }
     },
+    "/tvo/api/Services/UpdateService": {
+      "put": {
+        "tags": [
+          "Services"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/services"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Services/DeleteService/{id}": {
       "delete": {
         "tags": [
@@ -1515,6 +1856,37 @@
         }
       }
     },
+    "/tvo/api/Specialties/UpdateSpecialitie": {
+      "put": {
+        "tags": [
+          "Specialties"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/specialties"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/tvo/api/Specialties/DeleteSpecialitie/{id}": {
       "delete": {
         "tags": [
@@ -1578,6 +1950,37 @@
     },
     "/tvo/api/Transport/InsertTransport": {
       "post": {
+        "tags": [
+          "Transport"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/transport"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/Transport/UpdateTransport": {
+      "put": {
         "tags": [
           "Transport"
         ],
@@ -1708,6 +2111,37 @@
     },
     "/tvo/api/TransportData/InsertTransportData": {
       "post": {
+        "tags": [
+          "TransportData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/transportData"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/TransportData/UpdateTransportData": {
+      "put": {
         "tags": [
           "TransportData"
         ],
@@ -1957,6 +2391,37 @@
       }
     },
     "/tvo/api/WorkOrder/UpdateWorkOrder": {
+      "put": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/workOrder"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/UpdateWorkOrderDTO": {
       "put": {
         "tags": [
           "WorkOrder"

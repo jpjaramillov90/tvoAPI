@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tvo.APIWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c0bb1fc12a45b0eb2897f59ebcbcf653413de9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a517568f7e2851536ef39a9e85179da449f94c7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("tvo.APIWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tvo.APIWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
