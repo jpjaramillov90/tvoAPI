@@ -126,5 +126,43 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
+        [HttpGet("SearchBudgetWithNUI/{nui}")]
+        public async Task<ActionResult<List<SearchBudgetDTO>>> SearchBudgetWithNUI(string nui)
+        {
+            try
+            {
+                var budgets = await _workOrderService.SearchBudgetWithNUI(nui);
+                if (budgets == null || !budgets.Any())
+                {
+                    return NotFound("No se encontraron presupuestos con el NUI proporcionado.");
+                }
+                return Ok(budgets);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al buscar presupuestos: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al buscar presupuestos: " + ex.Message);
+            }
+        }
+
+        [HttpGet("GetTotalBudgetByNui/{nui}")]
+        public async Task<ActionResult<TotalBudgetDTO>> GetTotalBudgetByNui(string nui)
+        {
+            try
+            {
+                var totalBudget = await _workOrderService.GetTotalBudgetByNui(nui);
+                if (totalBudget == null)
+                {
+                    return NotFound("No se encontró presupuesto total para el NUI proporcionado.");
+                }
+                return Ok(totalBudget);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener presupuesto total: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al obtener presupuesto total: " + ex.Message);
+            }
+        }
+
     }
 }

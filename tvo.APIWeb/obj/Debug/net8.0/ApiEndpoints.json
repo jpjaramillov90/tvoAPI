@@ -1274,6 +1274,32 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "GetTotalBudgetByNui",
+    "RelativePath": "tvo/api/WorkOrder/GetTotalBudgetByNui/{nui}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nui",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "tvo.Aplicacion.DTO.DTOs.TotalBudgetDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
     "Method": "GetByIdAsync",
     "RelativePath": "tvo/api/WorkOrder/GetWorkOrderById/{id}",
     "HttpMethod": "GET",
@@ -1351,6 +1377,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[tvo.Infraestructura.AccesoDatos.workOrder, tvo.Dominio.Modelo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
+    "Method": "SearchBudgetWithNUI",
+    "RelativePath": "tvo/api/WorkOrder/SearchBudgetWithNUI/{nui}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nui",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[tvo.Aplicacion.DTO.DTOs.SearchBudgetDTO, tvo.Aplicacion.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

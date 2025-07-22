@@ -2521,6 +2521,93 @@
           }
         }
       }
+    },
+    "/tvo/api/WorkOrder/SearchBudgetWithNUI/{nui}": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "parameters": [
+          {
+            "name": "nui",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchBudgetDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchBudgetDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchBudgetDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tvo/api/WorkOrder/GetTotalBudgetByNui/{nui}": {
+      "get": {
+        "tags": [
+          "WorkOrder"
+        ],
+        "parameters": [
+          {
+            "name": "nui",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBudgetDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBudgetDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBudgetDTO"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -2613,6 +2700,61 @@
         },
         "additionalProperties": false
       },
+      "SearchBudgetDTO": {
+        "type": "object",
+        "properties": {
+          "idWorkOrder": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "orderStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "idOrderDetails": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idService": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descriptionServices": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "expires": {
+            "type": "string",
+            "format": "date"
+          },
+          "clientNui": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehiclePlate": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleBrand": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleModel": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ServicePriceDTO": {
         "type": "object",
         "properties": {
@@ -2623,6 +2765,25 @@
           "price": {
             "type": "number",
             "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TotalBudgetDTO": {
+        "type": "object",
+        "properties": {
+          "totalBudget": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "clientNui": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
             "nullable": true
           }
         },

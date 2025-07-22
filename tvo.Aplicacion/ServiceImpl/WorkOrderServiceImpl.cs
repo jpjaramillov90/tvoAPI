@@ -47,9 +47,19 @@ namespace tvo.Aplicacion.ServiceImpl
             return await _workOrderRepository.GetPendingWorkOrders();
         }
 
+        public async Task<TotalBudgetDTO> GetTotalBudgetByNui(string nui)
+        {
+            return await _workOrderRepository.GetTotalBudgetByNui(nui);
+        }
+
         public async Task<List<EmployeeWorkOrdersDTO>> GetWorkOrdersByEmployeeId(int employeeId)
         {
             return await _workOrderRepository.GetWorkOrdersByEmployeeId(employeeId);
+        }
+
+        public async Task<List<SearchBudgetDTO>> SearchBudgetWithNUI(string nui)
+        {
+            return await _workOrderRepository.SearchBudgetWithNUI(nui);
         }
 
         public async Task UpdateAsync(workOrder entity)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tvo.Infraestructura.CrossCuting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3929a775ae8035ef4862e1dd6921bd4c7fa37e68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+438e793eba729fc47668c6f175704e7377378d00")]
 [assembly: System.Reflection.AssemblyProductAttribute("tvo.Infraestructura.CrossCuting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tvo.Infraestructura.CrossCuting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
