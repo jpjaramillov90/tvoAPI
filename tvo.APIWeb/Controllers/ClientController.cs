@@ -85,5 +85,24 @@ namespace tvo.APIWeb.Controllers
             }
 
         }
-    } 
+
+        [HttpGet("Login/{mail}/{password}")]
+        public async Task<ActionResult<LoginDTO>> LoginView(string mail, string password)
+        {
+            try
+            {
+                var loginResult = await _clientService.LoginView(mail, password);
+                if (loginResult == null)
+                {
+                    return Unauthorized("Credenciales inválidas.");
+                }
+                return Ok(loginResult);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al iniciar sesión: " + ex.Message);
+                return StatusCode(500, "Error interno del servidor al iniciar sesión: " + ex.Message);
+            }
+        }
+    }
 }

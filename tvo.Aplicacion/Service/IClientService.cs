@@ -26,5 +26,7 @@ namespace tvo.Aplicacion.Service
         Task<List<client>> SearchClient(string firstName);
         [OperationContract]
         Task<List<ClientAndStatusDTO>> ListClientAndStatus();
+        [OperationContract]
+        Task<LoginDTO> LoginView(string mail, string password);
     }
 }

@@ -38,6 +38,26 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             }
         }
 
+        public async Task<LoginDTO> LoginView(string mail, string password)
+        {
+            try
+            {
+                var loginResult = await (from tmpLogin in _dbContext.client
+                                         where tmpLogin.mail == mail && tmpLogin.passwordClient == password
+                                         select new LoginDTO
+                                         {
+                                             mail = tmpLogin.mail,
+                                             password = tmpLogin.passwordClient,
+                                         }).FirstOrDefaultAsync();
+
+                return loginResult;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al realizar el inicio de sesión: " + ex.Message);
+            }
+        }
+
         public Task<List<client>> SearchClient(string firstName)
         {
             try

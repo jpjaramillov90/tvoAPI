@@ -13,5 +13,7 @@ namespace tvo.Dominio.Modelo.Abstracciones
         Task<List<client>> SearchClient(String firstName);
 
         Task<List<ClientAndStatusDTO>> ListClientAndStatus();
+
+        Task<LoginDTO> LoginView(string mail, string password);
     }
 }

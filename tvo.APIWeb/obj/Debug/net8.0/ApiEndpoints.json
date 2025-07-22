@@ -303,6 +303,37 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.ClientController",
+    "Method": "LoginView",
+    "RelativePath": "tvo/api/Client/Login/{mail}/{password}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mail",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "tvo.Aplicacion.DTO.DTOs.LoginDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.ClientController",
     "Method": "UpdateAsync",
     "RelativePath": "tvo/api/Client/UpdateClient",
     "HttpMethod": "PUT",

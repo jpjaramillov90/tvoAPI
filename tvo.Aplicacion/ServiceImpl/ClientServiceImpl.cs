@@ -47,6 +47,11 @@ namespace tvo.Aplicacion.ServiceImpl
             return await _clientRepository.ListClientAndStatus();
         }
 
+        public async Task<LoginDTO> LoginView(string mail, string password)
+        {
+            return await _clientRepository.LoginView(mail, password);
+        }
+
         public Task<List<client>> SearchClient(string firstName)
         {
             return _clientRepository.SearchClient(firstName);
