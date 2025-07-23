@@ -27,6 +27,11 @@ namespace tvo.Aplicacion.ServiceImpl
             await _transportDataRepository.AddAsync(entity);
         }
 
+        public async Task<bool> ChassisExists(string chassis)
+        {
+            return await _transportDataRepository.ChassisExists(chassis);
+        }
+
         public async Task DeleteAsync(int id)
         {
             await _transportDataRepository.DeleteAsync(id);

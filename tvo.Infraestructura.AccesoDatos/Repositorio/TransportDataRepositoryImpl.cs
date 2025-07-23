@@ -17,6 +17,18 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             this._dbContext = dbContext;
         }
 
+        public async Task<bool> ChassisExists(string chassis)
+        {
+            try
+            {
+                return await _dbContext.transportData.AnyAsync(td => td.chassis == chassis);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al validar que el chasis sea unico: " + ex.Message);
+            }
+        }
+
         public async Task<List<TransportDataDTO>> GetTransportDataWithClients()
         {
             try

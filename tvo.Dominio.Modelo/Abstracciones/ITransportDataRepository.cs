@@ -11,5 +11,6 @@ namespace tvo.Dominio.Modelo.Abstracciones
     public interface ITransportDataRepository : IRepository<transportData>
     {
         Task<List<TransportDataDTO>> GetTransportDataWithClients();
+        Task<bool> ChassisExists(string chassis);
     }
 }

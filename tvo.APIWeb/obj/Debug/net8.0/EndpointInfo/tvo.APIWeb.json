@@ -2241,6 +2241,45 @@
         }
       }
     },
+    "/tvo/api/TransportData/CheckChassisExists/{chassis}": {
+      "get": {
+        "tags": [
+          "TransportData"
+        ],
+        "parameters": [
+          {
+            "name": "chassis",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/tvo/api/WorkOrder/ListWorkOrders": {
       "get": {
         "tags": [

@@ -24,5 +24,7 @@ namespace tvo.Aplicacion.Service
         Task<transportData> GetByIdAsync(int id);
         [OperationContract]
         Task<List<TransportDataDTO>> GetTransportDataWithClients();
+        [OperationContract]
+        Task<bool> ChassisExists(string chassis);
     }
 }

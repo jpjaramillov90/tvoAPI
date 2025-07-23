@@ -22,31 +22,34 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             try
             {
                 var result = await (from c in _dbContext.client
+                                    where c.nui == nui // Filtra por NUI al inicio para mayor eficiencia
                                     join td in _dbContext.transportData on c.idClient equals td.idClient
-                                    join b in _dbContext.budget on td.idTransportData equals b.idTransportData
-                                    join wo in _dbContext.workOrder on b.idWorkOrder equals wo.idWorkOrder
+                                    join bu in _dbContext.budget on td.idTransportData equals bu.idTransportData
+                                    join wo in _dbContext.workOrder on bu.idWorkOrder equals wo.idWorkOrder
                                     join od in _dbContext.orderDetails on wo.idWorkOrder equals od.idWorkOrder
                                     join s in _dbContext.services on od.idService equals s.idService
                                     join sp in _dbContext.servicePrice on s.idService equals sp.idService
-                                    where c.nui == nui
+                                    // No es necesario unirse a 'orderStatus' ni 'brands' para el cálculo de SUM(price)
                                     group new { sp.price, c } by new { c.nui, c.firstName, c.lastName } into g
                                     select new TotalBudgetDTO
                                     {
                                         totalBudget = g.Sum(x => x.price),
                                         ClientNui = g.Key.nui,
                                         ClientName = $"{g.Key.firstName} {g.Key.lastName}"
-                                    }).FirstOrDefaultAsync();
+                                    }).FirstOrDefaultAsync(); // Usamos FirstOrDefaultAsync para obtener un solo resultado
 
+                // Manejo si no se encuentra ningún presupuesto para el NUI dado
                 return result ?? new TotalBudgetDTO
                 {
                     totalBudget = 0,
                     ClientNui = nui,
-                    ClientName = "Cliente no encontrado"
+                    ClientName = "Cliente no encontrado" // O podrías dejarlo null si prefieres
                 };
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error al calcular el presupuesto total para el cliente NUI {nui}: {ex.Message}");
+                // Es una buena práctica loguear el error o dar más contexto
+                throw new Exception($"Error al calcular el presupuesto total para el cliente NUI {nui}: {ex.Message}", ex);
             }
         }
 
@@ -115,13 +118,11 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
                                      join sp in _dbContext.servicePrice on s.idService equals sp.idService
                                      join br in _dbContext.brands on b.idBrands equals br.idBrands into brandJoin
                                      from brand in brandJoin.DefaultIfEmpty()
-                                     join m in _dbContext.models on brand.idBrands equals m.idBrands into modelJoin
-                                     from model in modelJoin.DefaultIfEmpty()
                                      where c.nui == nui
                                      select new SearchBudgetDTO
                                      {
                                          idWorkOrder = wo.idWorkOrder,
-                                         orderStatus = os.orderStatus1,
+                                         orderStatus = os.orderStatus1, 
                                          idOrderDetails = od.idOrderDetails,
                                          idService = s.idService,
                                          descriptionServices = s.descriptionServices,
@@ -131,7 +132,13 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
                                          clientName = c.firstName + " " + c.lastName,
                                          vehiclePlate = td.plate,
                                          vehicleBrand = brand != null ? brand.brand : "No especificado",
-                                         vehicleModel = model != null ? model.models1 : "No especificado"
+                                         vehicleModel = (brand != null && _dbContext.models.Any(m => m.idBrands == brand.idBrands))
+                                                        ? _dbContext.models
+                                                                      .Where(m => m.idBrands == brand.idBrands)
+                                                                      .OrderBy(m => m.models1)
+                                                                      .Select(m => m.models1)
+                                                                      .FirstOrDefault()
+                                                        : "No especificado"
                                      }).ToListAsync();
 
                 return budgets;

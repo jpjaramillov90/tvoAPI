@@ -1150,6 +1150,32 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
+    "Method": "ChassisExists",
+    "RelativePath": "tvo/api/TransportData/CheckChassisExists/{chassis}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chassis",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "tvo.APIWeb.Controllers.TransportDataController",
     "Method": "DeleteAsync",
     "RelativePath": "tvo/api/TransportData/DeleteTransportData/{id}",
     "HttpMethod": "DELETE",

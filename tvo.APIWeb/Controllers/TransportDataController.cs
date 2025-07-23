@@ -41,7 +41,7 @@ namespace tvo.APIWeb.Controllers
                 Console.WriteLine("Error al insertar datos de transporte: " + ex.Message);
                 return StatusCode(500, "Error en el servidor al insertar datos de transporte: " + ex.Message);
             }
-        }  
+        }
 
         [HttpPut("UpdateTransportData")]
         public async Task<ActionResult> UpdateAsync([FromBody] transportData entity)
@@ -75,6 +75,20 @@ namespace tvo.APIWeb.Controllers
             {
                 Console.WriteLine("Error al eliminar datos de transporte: " + ex.Message);
                 return StatusCode(500, "Error en el servidor al eliminar datos de transporte: " + ex.Message);
+            }
+        }
+        [HttpGet("CheckChassisExists/{chassis}")]
+        public async Task<ActionResult<bool>> ChassisExists(string chassis)
+        {
+            try
+            {
+                var exists = await _transportDataService.ChassisExists(chassis);
+                return Ok(exists);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al verificar existencia de chasis: " + ex.Message);
+                return StatusCode(500, "Error en el servidor al verificar existencia de chasis: " + ex.Message);
             }
         }
     }
