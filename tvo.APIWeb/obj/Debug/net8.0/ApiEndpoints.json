@@ -1300,15 +1300,15 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
-    "Method": "GetTotalBudgetByNui",
-    "RelativePath": "tvo/api/WorkOrder/GetTotalBudgetByNui/{nui}",
+    "Method": "GetTotalBudgetByidwo",
+    "RelativePath": "tvo/api/WorkOrder/GetTotalBudgetByidwo/{idwo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nui",
-        "Type": "System.String",
+        "Name": "idwo",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1414,15 +1414,15 @@
   },
   {
     "ContainingType": "tvo.APIWeb.Controllers.WorkOrderController",
-    "Method": "SearchBudgetWithNUI",
-    "RelativePath": "tvo/api/WorkOrder/SearchBudgetWithNUI/{nui}",
+    "Method": "SearchBudgetWithidwo",
+    "RelativePath": "tvo/api/WorkOrder/SearchBudgetWithidwo/{idwo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nui",
-        "Type": "System.String",
+        "Name": "idwo",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

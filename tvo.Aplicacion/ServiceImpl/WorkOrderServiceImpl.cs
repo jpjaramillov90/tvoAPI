@@ -47,9 +47,9 @@ namespace tvo.Aplicacion.ServiceImpl
             return await _workOrderRepository.GetPendingWorkOrders();
         }
 
-        public async Task<TotalBudgetDTO> GetTotalBudgetByNui(string nui)
+        public async Task<TotalBudgetDTO> GetTotalBudgetByidwo(int idwo)
         {
-            return await _workOrderRepository.GetTotalBudgetByNui(nui);
+            return await _workOrderRepository.GetTotalBudgetByidwo(idwo);
         }
 
         public async Task<List<EmployeeWorkOrdersDTO>> GetWorkOrdersByEmployeeId(int employeeId)
@@ -57,9 +57,9 @@ namespace tvo.Aplicacion.ServiceImpl
             return await _workOrderRepository.GetWorkOrdersByEmployeeId(employeeId);
         }
 
-        public async Task<List<SearchBudgetDTO>> SearchBudgetWithNUI(string nui)
+        public async Task<List<SearchBudgetDTO>> SearchBudgetWithidwo(int idwo)
         {
-            return await _workOrderRepository.SearchBudgetWithNUI(nui);
+            return await _workOrderRepository.SearchBudgetWithidwo(idwo);
         }
 
         public async Task UpdateAsync(workOrder entity)

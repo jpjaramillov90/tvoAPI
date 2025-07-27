@@ -17,39 +17,35 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             _dbContext = dbContext;
         }
 
-        public async Task<TotalBudgetDTO> GetTotalBudgetByNui(string nui)
+        public async Task<TotalBudgetDTO> GetTotalBudgetByidwo(int idwo)
         {
             try
             {
                 var result = await (from c in _dbContext.client
-                                    where c.nui == nui // Filtra por NUI al inicio para mayor eficiencia
                                     join td in _dbContext.transportData on c.idClient equals td.idClient
                                     join bu in _dbContext.budget on td.idTransportData equals bu.idTransportData
                                     join wo in _dbContext.workOrder on bu.idWorkOrder equals wo.idWorkOrder
                                     join od in _dbContext.orderDetails on wo.idWorkOrder equals od.idWorkOrder
                                     join s in _dbContext.services on od.idService equals s.idService
                                     join sp in _dbContext.servicePrice on s.idService equals sp.idService
-                                    // No es necesario unirse a 'orderStatus' ni 'brands' para el cálculo de SUM(price)
-                                    group new { sp.price, c } by new { c.nui, c.firstName, c.lastName } into g
+                                    join os in _dbContext.orderStatus on wo.idOrderStatus equals os.idOrderStatus
+                                    where wo.idWorkOrder == idwo
+                                    group sp.price by wo.idWorkOrder into g
                                     select new TotalBudgetDTO
                                     {
-                                        totalBudget = g.Sum(x => x.price),
-                                        ClientNui = g.Key.nui,
-                                        ClientName = $"{g.Key.firstName} {g.Key.lastName}"
-                                    }).FirstOrDefaultAsync(); // Usamos FirstOrDefaultAsync para obtener un solo resultado
+                                        totalBudget = g.Sum(),
+                                        idWorkOrder = g.Key.ToString()
+                                    }).FirstOrDefaultAsync();
 
-                // Manejo si no se encuentra ningún presupuesto para el NUI dado
                 return result ?? new TotalBudgetDTO
                 {
                     totalBudget = 0,
-                    ClientNui = nui,
-                    ClientName = "Cliente no encontrado" // O podrías dejarlo null si prefieres
+                    idWorkOrder = idwo.ToString()
                 };
             }
             catch (Exception ex)
             {
-                // Es una buena práctica loguear el error o dar más contexto
-                throw new Exception($"Error al calcular el presupuesto total para el cliente NUI {nui}: {ex.Message}", ex);
+                throw new Exception($"Error al calcular el presupuesto total para la Orden de Trabajo {idwo}: {ex.Message}", ex);
             }
         }
 
@@ -104,7 +100,7 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
             }
         }
 
-        public async Task<List<SearchBudgetDTO>> SearchBudgetWithNUI(string nui)
+        public async Task<List<SearchBudgetDTO>> SearchBudgetWithidwo(int idwo)
         {
             try
             {
@@ -118,11 +114,11 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
                                      join sp in _dbContext.servicePrice on s.idService equals sp.idService
                                      join br in _dbContext.brands on b.idBrands equals br.idBrands into brandJoin
                                      from brand in brandJoin.DefaultIfEmpty()
-                                     where c.nui == nui
+                                     where wo.idWorkOrder == idwo
                                      select new SearchBudgetDTO
                                      {
                                          idWorkOrder = wo.idWorkOrder,
-                                         orderStatus = os.orderStatus1, 
+                                         orderStatus = os.orderStatus1,
                                          idOrderDetails = od.idOrderDetails,
                                          idService = s.idService,
                                          descriptionServices = s.descriptionServices,

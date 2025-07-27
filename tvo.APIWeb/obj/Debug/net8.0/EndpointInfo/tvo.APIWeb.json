@@ -2561,18 +2561,19 @@
         }
       }
     },
-    "/tvo/api/WorkOrder/SearchBudgetWithNUI/{nui}": {
+    "/tvo/api/WorkOrder/SearchBudgetWithidwo/{idwo}": {
       "get": {
         "tags": [
           "WorkOrder"
         ],
         "parameters": [
           {
-            "name": "nui",
+            "name": "idwo",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -2609,18 +2610,19 @@
         }
       }
     },
-    "/tvo/api/WorkOrder/GetTotalBudgetByNui/{nui}": {
+    "/tvo/api/WorkOrder/GetTotalBudgetByidwo/{idwo}": {
       "get": {
         "tags": [
           "WorkOrder"
         ],
         "parameters": [
           {
-            "name": "nui",
+            "name": "idwo",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -2817,11 +2819,7 @@
             "format": "double",
             "nullable": true
           },
-          "clientNui": {
-            "type": "string",
-            "nullable": true
-          },
-          "clientName": {
+          "idWorkOrder": {
             "type": "string",
             "nullable": true
           }

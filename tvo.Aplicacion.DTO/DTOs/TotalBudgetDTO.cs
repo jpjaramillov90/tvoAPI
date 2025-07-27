@@ -9,7 +9,6 @@ namespace tvo.Aplicacion.DTO.DTOs
     public class TotalBudgetDTO
     {
         public decimal? totalBudget { get; set; }
-        public string ClientNui { get; set; }
-        public string ClientName { get; set; }
+        public string idWorkOrder { get; set; }
     }
 }

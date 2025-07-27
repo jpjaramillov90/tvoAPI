@@ -27,8 +27,8 @@ namespace tvo.Aplicacion.Service
         [OperationContract]
         Task<List<EmployeeWorkOrdersDTO>> GetWorkOrdersByEmployeeId(int employeeId);
         [OperationContract]
-        Task<List<SearchBudgetDTO>> SearchBudgetWithNUI(string nui);
+        Task<List<SearchBudgetDTO>> SearchBudgetWithidwo(int idwo);
         [OperationContract]
-        Task<TotalBudgetDTO> GetTotalBudgetByNui(string nui);
+        Task<TotalBudgetDTO> GetTotalBudgetByidwo(int idwo);
     }
 }

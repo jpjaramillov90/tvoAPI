@@ -126,12 +126,12 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
-        [HttpGet("SearchBudgetWithNUI/{nui}")]
-        public async Task<ActionResult<List<SearchBudgetDTO>>> SearchBudgetWithNUI(string nui)
+        [HttpGet("SearchBudgetWithidwo/{idwo}")]
+        public async Task<ActionResult<List<SearchBudgetDTO>>> SearchBudgetWithidwo(int idwo)
         {
             try
             {
-                var budgets = await _workOrderService.SearchBudgetWithNUI(nui);
+                var budgets = await _workOrderService.SearchBudgetWithidwo(idwo);
                 if (budgets == null || !budgets.Any())
                 {
                     return NotFound("No se encontraron presupuestos con el NUI proporcionado.");
@@ -145,12 +145,12 @@ namespace tvo.APIWeb.Controllers
             }
         }
 
-        [HttpGet("GetTotalBudgetByNui/{nui}")]
-        public async Task<ActionResult<TotalBudgetDTO>> GetTotalBudgetByNui(string nui)
+        [HttpGet("GetTotalBudgetByidwo/{idwo}")]
+        public async Task<ActionResult<TotalBudgetDTO>> GetTotalBudgetByidwo(int idwo)
         {
             try
             {
-                var totalBudget = await _workOrderService.GetTotalBudgetByNui(nui);
+                var totalBudget = await _workOrderService.GetTotalBudgetByidwo(idwo);
                 if (totalBudget == null)
                 {
                     return NotFound("No se encontró presupuesto total para el NUI proporcionado.");

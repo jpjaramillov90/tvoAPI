@@ -12,7 +12,7 @@ namespace tvo.Dominio.Modelo.Abstracciones
     {
         Task<List<PendingWorkOrderDTO>> GetPendingWorkOrders();
         Task<List<EmployeeWorkOrdersDTO>> GetWorkOrdersByEmployeeId(int employeeId);
-        Task<List<SearchBudgetDTO>> SearchBudgetWithNUI(string nui);
-        Task<TotalBudgetDTO> GetTotalBudgetByNui(string nui);
+        Task<List<SearchBudgetDTO>> SearchBudgetWithidwo(int idwo);
+        Task<TotalBudgetDTO> GetTotalBudgetByidwo(int idwo);
     }
 }
