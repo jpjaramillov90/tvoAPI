@@ -24,5 +24,7 @@ namespace tvo.Aplicacion.Service
         Task<services> GetByIdAsync(int id);
         [OperationContract]
         Task<List<ServicePriceDTO>> GetServicesByMinPrice(decimal minPrice);
+        [OperationContract]
+        Task<List<GetServicesByWorkOrderDTO>> GetServicesByWorkOrder(int idWorkOrder);
     }
 }

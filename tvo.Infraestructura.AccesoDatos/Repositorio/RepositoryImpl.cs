@@ -30,7 +30,6 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
                 throw new Exception("Error no se pudo insertar los datos, " + ex.Message);
             }
         }
-
         public async Task DeleteAsync(int id)
         {
             try

@@ -47,6 +47,11 @@ namespace tvo.Aplicacion.ServiceImpl
             return await _servicesRepository.GetServicesByMinPrice(minPrice);
         }
 
+        public async Task<List<GetServicesByWorkOrderDTO>> GetServicesByWorkOrder(int idWorkOrder)
+        {
+            return await _servicesRepository.GetServicesByWorkOrder(idWorkOrder);
+        }
+
         public async Task UpdateAsync(services entity)
         {
             await _servicesRepository.UpdateAsync(entity);

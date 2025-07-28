@@ -75,7 +75,23 @@ namespace tvo.APIWeb.Controllers
                 Console.WriteLine("Error al eliminar servicio: " + ex.Message);
                 return StatusCode(500, "Error en el servidor al eliminar servicio: " + ex.Message);
             }
-
+        }
+        [HttpGet("GetServicesByWorkOrder/{idWorkOrder}")]
+        public async Task<ActionResult<List<GetServicesByWorkOrderDTO>>> GetServicesByWorkOrder(int idWorkOrder)
+        {
+            try
+            {
+                var services = await _servicesService.GetServicesByWorkOrder(idWorkOrder);
+                if (services == null || !services.Any())
+                {
+                    return NotFound($"No se encontraron servicios para la orden de trabajo {idWorkOrder}");
+                }
+                return Ok(services);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al obtener servicios: {ex.Message}");
+            }
         }
     }
 }

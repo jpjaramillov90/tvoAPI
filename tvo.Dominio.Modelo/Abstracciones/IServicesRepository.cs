@@ -11,5 +11,6 @@ namespace tvo.Dominio.Modelo.Abstracciones
     public interface IServicesRepository : IRepository<services>
     {
         Task<List<ServicePriceDTO>> GetServicesByMinPrice(decimal minPrice);
+        Task<List<GetServicesByWorkOrderDTO>> GetServicesByWorkOrder(int idWorkOrder);
     }
 }

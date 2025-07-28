@@ -2,10 +2,12 @@ C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\De
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Infraestructura.AccesoDatos.runtimeconfig.json
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Infraestructura.AccesoDatos.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Infraestructura.AccesoDatos.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Dominio.Modelo.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Dominio.Servicio.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Dominio.Modelo.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Dominio.Servicio.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\tvo.Infraestructura.AccesoDatos.csproj.AssemblyReference.cache
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\tvo.Infraestructura.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\tvo.Infraestructura.AccesoDatos.AssemblyInfoInputs.cache
@@ -17,5 +19,3 @@ C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\De
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\tvo.Infraestructura.AccesoDatos.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\tvo.Infraestructura.AccesoDatos.genruntimeconfig.cache
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\obj\Debug\net8.0\ref\tvo.Infraestructura.AccesoDatos.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.AccesoDatos\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb

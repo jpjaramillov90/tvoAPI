@@ -1,6 +1,7 @@
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.deps.json
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Dominio.Modelo.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Dominio.Servicio.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Infraestructura.AccesoDatos.dll
@@ -13,6 +14,7 @@ C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.In
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Infraestructura.CrossCuting.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Infraestructura.ServiciosEmail.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\tvo.Aplicacion.csproj.AssemblyReference.cache
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\tvo.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\tvo.Aplicacion.AssemblyInfoInputs.cache
@@ -23,5 +25,3 @@ C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\tvo.Ap
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\refint\tvo.Aplicacion.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\tvo.Aplicacion.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\obj\Debug\net8.0\ref\tvo.Aplicacion.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Aplicacion\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb

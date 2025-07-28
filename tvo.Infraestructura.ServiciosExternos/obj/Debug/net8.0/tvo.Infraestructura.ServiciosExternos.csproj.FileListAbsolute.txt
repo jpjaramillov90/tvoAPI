@@ -1,10 +1,12 @@
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.deps.json
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Dominio.Modelo.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Dominio.Servicio.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Dominio.Modelo.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Dominio.Servicio.pdb
+C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.csproj.AssemblyReference.cache
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\refint\tvo.Infraestructura.ServiciosExternos.dll
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\tvo.Infraestructura.ServiciosExternos.pdb
 C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\obj\Debug\net8.0\ref\tvo.Infraestructura.ServiciosExternos.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Aplicacion.DTO.dll
-C:\Users\joaojv\Documents\Projects\tvoAPI\tvo.Infraestructura.ServiciosExternos\bin\Debug\net8.0\tvo.Aplicacion.DTO.pdb

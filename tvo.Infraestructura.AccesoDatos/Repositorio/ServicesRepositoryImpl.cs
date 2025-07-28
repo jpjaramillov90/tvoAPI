@@ -37,5 +37,25 @@ namespace tvo.Infraestructura.AccesoDatos.Repositorio
                 throw new Exception("No se ver los servicios con más de el valor indicado: " + ex.Message);
             }
         }
+
+        public async Task<List<GetServicesByWorkOrderDTO>> GetServicesByWorkOrder(int idWorkOrder)
+        {
+            try
+            {
+                var services = await(from od in _dbContext.orderDetails
+                                     join s in _dbContext.services on od.idService equals s.idService
+                                     where od.idWorkOrder == idWorkOrder
+                                     select new GetServicesByWorkOrderDTO
+                                     {
+                                         Description = s.descriptionServices
+                                     }).ToListAsync();
+
+                return services;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"No se pudieron obtener los servicios para la orden de trabajo {idWorkOrder}: {ex.Message}");
+            }
+        }
     }
 }
